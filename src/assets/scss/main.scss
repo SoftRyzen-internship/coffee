@@ -6,7 +6,6 @@
 @import './base/fonts';
 @import './base/common';
 @import './base/container';
-@import './base/section';
 
 @import './components/buttons';
 @import './components/forms';
@@ -14,8 +13,11 @@
 @import './components/menu';
 @import './components/modal';
 
-@import './components/hero';
-
 @import './layouts/header';
-
+@import './components/hero';
+@import './layouts/menu';
+@import './layouts/about-us';
+@import './layouts/coffee-kinds';
+@import './layouts/blog';
+@import './layouts/reviews';
 @import './layouts/footer';

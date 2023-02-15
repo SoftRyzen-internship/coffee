@@ -1,7 +1,17 @@
-@include font-face('Montserrat', '../fonts/Montserrat-Regular', 400);
-@include font-face('Montserrat', '../fonts/Montserrat-Medium', 500);
-@include font-face('Montserrat', '../fonts/Montserrat-SemiBold', 600);
-@include font-face('Montserrat', '../fonts/Montserrat-Bold', 700);
-@include font-face('Lato', '../fonts/Lato-Light', 300);
-@include font-face('Lato', '../fonts/Lato-Regular', 400);
-@include font-face('Lato', '../fonts/Lato-Bold', 700);
+// Roboto
+@include font-face('Roboto', '../fonts/Roboto/Roboto-Light', 300);
+@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400);
+@include font-face('Roboto', '../fonts/Roboto/Roboto-Medium', 500);
+@include font-face('Roboto', '../fonts/Roboto/Roboto-Bold', 700);
+
+// Playfair-Display
+@include font-face('Playfair-Display', '../fonts/Playfair-Display/PlayfairDisplay-Regular', 400);
+@include font-face('Playfair-Display', '../fonts/Playfair-Display/PlayfairDisplay-SemiBold', 600);
+@include font-face('Playfair-Display', '../fonts/Playfair-Display/PlayfairDisplay-Bold', 700);
+
+// PT-Serif
+@include font-face('PT-Serif', '../fonts/PT-Serif/PTSerif-Regular', 400);
+
+//Gotham-Pro
+@include font-face('Gotham-Pro', '../fonts/Gotham-Pro/gothampro_bold', 700);
+

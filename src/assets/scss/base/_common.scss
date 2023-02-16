@@ -112,10 +112,3 @@ button {
 
   color: var(--secondary-txt-cl);
 }
-
-.logo {
-  @include mq(tablet) {
-    width: 100px;
-    height: 30px;
-  }
-}

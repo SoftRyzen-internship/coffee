@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid red;
 
   @include mq(mobile-only) {
     padding: 0 20px;

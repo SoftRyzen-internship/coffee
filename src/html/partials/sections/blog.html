@@ -1,6 +1,7 @@
 <section class="section blog" id="blog">
   <div class="container">
-    <h2 class="blog__section-title section-title">Our Lastest Blog</h2>
+    {% set sectionTitle = "Our Lastest Blog" %} {% set classList = "blog__section-title"%} {%include
+    'components/section-title.html' %}
     <ul class="blog__list blog__slick-slider">
       <li class="blog__list-item">
         <picture>

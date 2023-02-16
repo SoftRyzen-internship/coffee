@@ -1,4 +1,123 @@
 <section class="about-us">
-  <h1 class="section-title">About Us</h1>
-  <button class="btn">qwe</button>
+  <div class="container">
+    <h2 class="section-title">Why You Choice Us</h2>
+
+    <ul class="about-us__list">
+      <li class="about-us__item">
+        <svg class="about-us__svg" width="60" height="60" aria-label="location">
+          <use href="#"></use>
+        </svg>
+        <div>
+          <p class="about-us__subtitle">Best Place</p>
+          <p class="about-us__text">
+            Our cafe is located in the center of the city near the bridge
+          </p>
+        </div>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__svg" width="60" height="60" aria-label="coffee">
+          <use href="#"></use>
+        </svg>
+        <div>
+          <p class="about-us__subtitle">Natural Coffee</p>
+          <p class="about-us__text">
+            Our cafe is located in the center of the city near the bridge
+          </p>
+        </div>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__svg" width="60" height="60" aria-label="reservation">
+          <use href="#"></use>
+        </svg>
+        <div>
+          <p class="about-us__subtitle">Online Reservation</p>
+          <p class="about-us__text">
+            Our cafe is located in the center of the city near the bridge
+          </p>
+        </div>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__svg" width="60" height="60" aria-label="quality">
+          <use href="#"></use>
+        </svg>
+        <div>
+          <p class="about-us__subtitle">Best Quality</p>
+          <p class="about-us__text">
+            Our cafe is located in the center of the city near the bridge
+          </p>
+        </div>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__svg" width="60" height="60" aria-label="wifi">
+          <use href="#"></use>
+        </svg>
+        <div>
+          <p class="about-us__subtitle">Free Wifi</p>
+          <p class="about-us__text">
+            Our cafe is located in the center of the city near the bridge
+          </p>
+        </div>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__svg" width="60" height="60" aria-label="event space">
+          <use href="#"></use>
+        </svg>
+        <div>
+          <p class="about-us__subtitle">Event Space</p>
+          <p class="about-us__text">
+            Our cafe is located in the center of the city near the bridge
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="about-us__img-wrapper">
+      <picture class="about-us__picture">
+        <source
+          srcset="
+            ./assets/images/about-us/mobile/coffeeterium.webp    1x,
+            ./assets/images/about-us/mobile/coffeeterium@2x.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            ./assets/images/about-us/mobile/coffeeterium.png    1x,
+            ./assets/images/about-us/mobile/coffeeterium@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./assets/images/about-us/tablet/coffeeterium.webp    1x,
+            ./assets/images/about-us/tablet/coffeeterium@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            ./assets/images/about-us/tablet/coffeeterium.png    1x,
+            ./assets/images/about-us/tablet/coffeeterium@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+
+        <img
+          class="about-us__img-coffee"
+          src="./assets/images/about-us/tablet/coffeeterium.png"
+          alt="coffee house"
+          width="425"
+          height="421"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
 </section>

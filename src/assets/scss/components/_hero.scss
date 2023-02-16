@@ -3,6 +3,10 @@
   background: #FFFBF3;
 }
 
+.hero__container {
+  padding-right: 0;
+}
+
 
 .hero__btn {
   display: flex;
@@ -109,14 +113,26 @@
 
 }
 
+.hero__picture {
+  // width: 337px;
+  // height: 435px;
+  @include mq(tablet) {
+
+  }
+  @include mq(desktop) {
+        // width: 666px;
+        //   height: 765px;
+  }
+}
+
 .hero__image {
   // width: 335px;
   // height: 386px;
-  border: 1px solid rgb(255, 0, 0);
+  // border: 1px solid rgb(255, 0, 0);
 }
 
 .slick-list {
-    border: 1px solid #2a2a2a;
+    // border: 1px solid #2a2a2a;
 }
 
 .slick-track {

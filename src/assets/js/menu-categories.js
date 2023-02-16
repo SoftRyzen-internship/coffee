@@ -8,4 +8,15 @@ $('.category__slick-slider').slick({
   infinite: false,
   arrows: true,
   dots: false,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1439,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: false,
+      },
+    },
+  ],
 });

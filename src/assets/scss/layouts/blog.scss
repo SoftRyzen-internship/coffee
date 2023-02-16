@@ -27,12 +27,57 @@
       width: 159px;
       margin-left: 17px;
       @include mq(tablet) {
-        width: 384px;
+        width: 336px;
         margin-left: 32px;
+      }
+      @include mq(desktop) {
+        width: 384px;
       }
     }
     & .blog__image {
       width: 100%;
+    }
+  }
+  &__slick-slide-title {
+    display: block;
+    font-family: var(--Playfair-Display);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.31;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 159px;
+    padding-right: 16px;
+    margin-top: 16px;
+    color: var(--black-txt);
+    @include mq(tablet) {
+      padding-right: 0;
+      margin-top: 20px;
+      width: 305px;
+      font-size: 28px;
+    }
+  }
+  &__slick-slide-text {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    width: 159px;
+    margin-top: 8px;
+    color: var(--grey-txt);
+    @include mq(tablet) {
+      font-size: 16px;
+      margin-top: 12px;
+      width: 235px;
+    }
+  }
+  &__slick-slider-nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    @include mq(desktop) {
+      margin-top: 40px;
     }
   }
 }

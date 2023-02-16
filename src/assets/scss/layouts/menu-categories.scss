@@ -1,0 +1,106 @@
+.category {
+  background-color: var(--primary-bg);
+  padding-top: 40px;
+  padding-bottom: 25px;
+  @include mq(tablet) {
+    padding-bottom: 40px;
+  }
+  @include mq(desktop) {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+  &__container {
+    margin: 0 auto;
+  }
+  &__section-title {
+    text-align: center;
+    margin-bottom: 47px;
+    @include mq(tablet) {
+      margin-bottom: 77px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 78px;
+    }
+  }
+  &__slick-slider {
+    & .slick-slide {
+      margin-left: 16px;
+      @include mq(tablet) {
+        margin-left: 37px;
+      }
+      @include mq(desktop) {
+        margin-left: 41px;
+      }
+    }
+    & .category__image {
+      width: 100%;
+    }
+    & .slick-arrow {
+      font-size: 0;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 32%;
+      z-index: 1;
+      @include mq(tablet) {
+        width: 32px;
+        height: 32px;
+        top: 35%;
+      }
+    }
+    & .slick-next {
+      background: url('../images/menu-categories/arrow-active.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      right: -8px;
+      @include mq(tablet) {
+        right: -16px;
+      }
+      &.slick-disabled {
+        background: url('../images/menu-categories/arrow-disable.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transform: rotate(180deg);
+      }
+    }
+    & .slick-prev {
+      background: url('../images/menu-categories/arrow-active.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      left: -8px;
+      transform: rotate(180deg);
+      @include mq(tablet) {
+        left: -16px;
+      }
+      &.slick-disabled {
+        background: url('../images/menu-categories/arrow-disable.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transform: rotate(0deg);
+      }
+    }
+    & .category__slick-slide-link {
+      display: block;
+      font-family: var(--Playfair-Display);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+      text-align: center;
+      margin-top: 8px;
+      color: var(--black-txt);
+      @include mq(tablet) {
+        font-size: 28px;
+        margin-top: 12px;
+      }
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}

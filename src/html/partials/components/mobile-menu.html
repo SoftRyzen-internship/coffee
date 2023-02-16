@@ -1,15 +1,17 @@
 <div class="mobile-menu" data-menu>
-  <img
-    class="logo mobile-menu-logo"
-    src="./assets/images/logo-dark.svg"
-    alt="GoIT logo"
-    width="67"
-    height="20"
-  />
-  <button class="mobile-menu-close" type="button" aria-label="zamknij menu" data-menu-close-btn>
-    <svg class="mobile-menu-close-svg" width="40" height="40">
-      <use href="./assets/images/sprite.svg#icon-close-menu"></use>
-    </svg>
-  </button>
-  <div class="container">{% include 'components/nav-menu.html' %}</div>
+  <div class="container">
+    <div class="mobile-menu__top">
+      <a href="/" class="link header__logo" aria-label="logo">
+        <span>C</span><i class="icon-logo-coffee-frame"></i><span>ffee</span>
+      </a>
+      <button
+        class="mobile-menu-close icon-xmark-solid"
+        type="button"
+        aria-label="Close menu"
+        data-menu-close-btn
+      ></button>
+    </div>
+    {% set classNav= "nav-mobile" %}{% set classNavList= "nav-list-mobile" %}{% set
+    classBtnPosition= "nav__btn-mobile-position" %}{% include 'components/nav-menu.html' %}
+  </div>
 </div>

@@ -5,9 +5,11 @@
 @import './utils/variables';
 
 @import './base/fonts';
+@import './base/icons';
 @import './base/common';
 @import './base/container';
 
+@import './components/section-title';
 @import './components/buttons';
 @import './components/forms';
 @import './components/mobile-menu';

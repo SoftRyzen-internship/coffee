@@ -1,35 +1,85 @@
-.header__container {
-  .nav {
-    display: none;
-    @include mq(desktop) {
-      display: block;
-    }
-    @include mq(desktop) {
-      margin-left: auto;
-    }
+.nav {
+  display: flex;
+  align-items: center;
+  color: var(--brown-bg);
+  white-space: nowrap;
+  @include mq(tablet) {
+    font-size: 20px;
+    line-height: 1.15;
   }
-  .nav-list {
+  &__btn-position {
+    @include mq(mobile-only) {
+      display: none;
+    }
     @include mq(tablet) {
-      display: flex;
+      margin-right: 52px;
     }
-  }
-  .nav-item:not(:last-child) {
-    margin-right: 20px;
     @include mq(desktop) {
-      margin-right: 50px;
+      margin-left: 84px;
     }
   }
-  .nav-link {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: inherit;
-    color: var(--secondary-txt-cl);
+}
+.nav-list {
+  display: none;
+  @include mq(desktop) {
+    display: flex;
+  }
+}
+.nav-item {
+  @include mq(desktop) {
+    position: relative;
 
-    transition: color var(--fast) linear;
-
-    &:hover,
-    &:focus {
-      color: var(--accent-cl);
+    &:hover:before,
+    &:focus::before {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+      transform-origin: left;
+      -webkit-transition: -webkit-transform var(--cubic);
+      transition: -webkit-transform var(--cubic);
+      -o-transition: transform var(--cubic);
+      transition: transform var(--cubic);
+      transition: transform var(--cubic), -webkit-transform var(--cubic);
     }
+    &::before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background-color: var(--brown-bg);
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+      transform-origin: right;
+      -webkit-transition: -webkit-transform var(--cubic);
+      transition: -webkit-transform var(--cubic);
+      -o-transition: transform var(--cubic);
+      transition: transform var(--cubic);
+      transition: transform var(--cubic), -webkit-transform var(--cubic);
+    }
+    &:not(:last-child) {
+      margin-right: 52px;
+    }
+  }
+}
+.nav-btn {
+  border-radius: 40px;
+  border: 1px solid var(--brown-bg);
+  padding: 10px 37px;
+  transition: var(--cubic);
+
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: var(--white-txt);
+    background: var(--brown-bg);
   }
 }

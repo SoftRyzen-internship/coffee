@@ -6,8 +6,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--coffee-kinds-bg);
-  opacity: 0.7;
+  background-color: rgba(252, 229, 184, 0.7);
   z-index: 100;
   overflow: auto;
   transition: opacity 0.2s;
@@ -27,9 +26,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+
+  padding: 32px 16px 40px 16px;
   width: 100%;
   max-width: 335px;
-  // min-height: 375px;
+  min-height: 379px;
 
   background-color: var(--primary-bg);
   box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
@@ -44,8 +45,9 @@
   }
 
   @include mq(tablet) {
+    padding: 32px 60px 40px 60px;
     max-width: 470px;
-    // min-height: 434px;
+    min-height: 438px;
   }
 
   .is-hidden & {
@@ -53,116 +55,90 @@
   }
 }
 
-// .modal-container {
-//   position: relative;
-//   width: inherit;
-//   height: inherit;
-//   padding: 52px 20px 32px 20px;
-
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     inset: 0;
-//     border-radius: 30px;
-//     padding: 1px;
-//     z-index: -1;
-//     background: var(--normal-gradient-bg);
-//     -webkit-mask: linear-gradient(#fff 0 0, #fff) content-box, linear-gradient(#fff 0 0, #fff);
-//     -webkit-mask-composite: xor;
-//     mask-composite: exclude;
-//   }
-
-//   @include mq(tablet) {
-//     padding: 48px 52px 44px 52px;
-//   }
-// }
-
-.btn-close {
+.modal-close {
   position: absolute;
-  right: 7px;
-  top: 7px;
+  right: 16px;
+  top: 16px;
+  font-size: 20px;
+  color: var(--black-txt);
+}
+
+.send-btn-wrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../images/icon-close.svg');
-  background-color: #fff;
-  outline: none;
-
-  &:focus {
-    border: 1.5px solid rgba(255, 255, 255, 0.75);
-  }
 }
 
 .send__btn {
-  margin-top: 40px !important;
-  margin: 0 auto;
+  padding: 19.5px 128.5px;
+  margin-top: 35px !important;
 
   @include mq(tablet) {
+    padding: 19.5px 81px;
     margin-top: 52px;
   }
 }
 
-.modal-content {
-  width: 232px;
-
+.form-control {
+  margin-top: 32px;
   @include mq(tablet) {
-    width: 367px;
   }
 }
 
-.modal__title {
-  margin-bottom: 0px;
-  line-height: 1.25;
+.form-control--name {
+  @include mq(tablet) {
+    margin-top: 42px;
+  }
+}
+
+.modal__title-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .contact-form-input {
+  padding-top: 6px;
+  padding-left: 6px;
   width: 100%;
-  height: 50px;
-  margin-top: 32px;
-  padding: 15px 25px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--primary-txt-cl);
-
-  border: 1px solid var(--primary-txt-cl);
-  border-radius: 30px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid var(--grey-txt);
   background-color: transparent;
   outline: none;
 
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--black-txt);
+
   @include mq(tablet) {
-    margin-top: 44px;
+    padding-top: 15px;
+    padding-left: 15px;
+    height: 50px;
+
+    font-size: 16px;
+    line-height: 1.3;
   }
 }
 
-.close-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-
-  fill: var(--primary-txt-cl);
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+.contact-form-label {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--grey-txt);
 
   @include mq(tablet) {
-    top: 16px;
-    right: 24px;
+    font-size: 16px;
+    line-height: 1.25;
   }
 }
 
 // FORM VALIDATION
 .form-control span {
   visibility: hidden;
+  display: none;
 }
 
 .form-control.error span {
+  display: block;
   visibility: visible;
   display: block;
   width: 232px;

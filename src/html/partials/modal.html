@@ -2,42 +2,36 @@
   <div class="modal is-hidden"> -->
 <div class="backdrop" data-modal>
   <div class="modal">
-    <!-- <div class="modal-container"> -->
-    <svg class="close-icon" data-modal-close aria-label="Close Icon">
-      <use href="./assets/images/sprite.svg#icon-close"></use>
-    </svg>
+    <button
+      class="modal-close icon-xmark-solid"
+      type="button"
+      aria-label="Close menu"
+      data-menu-close-btn
+    ></button>
     <div class="modal-content">
       <form class="contact-form" action="#" id="form">
-        <h2 class="section-title modal__title">We will call you back</h2>
+        <div class="modal__title-wrapper">
+          {% set sectionTitle = "Order a call" %} {% set classList = "modal__section-title"%}
+          {%include 'components/section-title.html' %}
+        </div>
 
-        <div class="form-control">
-          <input
-            class="contact-form-input"
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
+        <div class="form-control form-control--name">
+          <label for="name" class="contact-form-label">Name*</label>
+          <input class="contact-form-input" id="name" type="text" name="name" required />
           <span>Error message</span>
         </div>
 
         <div class="form-control">
-          <input
-            class="contact-form-input"
-            id="telephone"
-            type="tel"
-            name="telephone"
-            placeholder="Your Phone"
-            required
-          />
+          <label for="telephone" class="contact-form-label">Phone*</label>
+          <input class="contact-form-input" id="telephone" type="tel" name="telephone" required />
           <span>Error message</span>
         </div>
 
-        <button class="send__btn btn" type="submit">Send</button>
+        <div class="send-btn-wrapper">
+          <button class="btn send__btn" type="submit">Send</button>
+        </div>
       </form>
     </div>
-    <!-- </div> -->
   </div>
 
   <!-- <div class="modal popup is-hidden">

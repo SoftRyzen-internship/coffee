@@ -1,6 +1,7 @@
 <section class="section blog" id="blog">
   <div class="container">
-    <h2 class="blog__section-title section-title">Our Lastest Blog</h2>
+    {% set sectionTitle = "Our Lastest Blog" %} {% set classList = "blog__section-title"%} {%include
+    'components/section-title.html' %}
     <ul class="blog__list blog__slick-slider">
       <li class="blog__list-item">
         <picture>
@@ -56,7 +57,7 @@
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-1@1x.png"
             alt=""
             width="159"
@@ -125,7 +126,7 @@
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-2@1x.png"
             alt=""
             width="159"
@@ -194,7 +195,7 @@
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-3@1x.png"
             alt=""
             width="159"
@@ -263,7 +264,7 @@
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-4@1x.png"
             alt=""
             width="159"
@@ -329,7 +330,7 @@
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-5@1x.png"
             alt=""
             width="159"
@@ -344,5 +345,6 @@
         </p>
       </li>
     </ul>
+    {% set paginationClass = "blog__slick-slider-nav"%} {% include 'components/slider-dots.html' %}
   </div>
 </section>

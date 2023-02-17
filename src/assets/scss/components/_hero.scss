@@ -15,10 +15,8 @@
 
   position: absolute;
   top: 145px;
-  right: -210px;
+  right: -400px;
   z-index: -1;
-
-  overflow-x: hidden;
 
   width: 629px;
   height: 534px;
@@ -40,11 +38,6 @@
     top: -130px;
     right: -550px;
   }
-}
-
-.hero__container {
-  padding-right: 0;
-  // border: 1px solid blue;
 }
 
 .hero__slider-wrapper {
@@ -168,7 +161,7 @@
 }
 
 .hero__slider .slick-track {
-  border: 1px solid blue;
+  // border: 1px solid blue;
   height: 485px;
 
   @include mq(tablet) {

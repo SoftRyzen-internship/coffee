@@ -51,7 +51,7 @@
   }
 
   .is-hidden & {
-    transform: translate(-50%, 100%) scale(0);
+    transform: translate(-50%, -50%) scale(0.5);
   }
 }
 
@@ -98,7 +98,7 @@
 
 .contact-form-input {
   padding-top: 6px;
-  padding-left: 6px;
+  padding-bottom: 6px;
   width: 100%;
   height: 32px;
   border: none;
@@ -112,7 +112,7 @@
 
   @include mq(tablet) {
     padding-top: 15px;
-    padding-left: 15px;
+    padding-bottom: 15px;
     height: 50px;
 
     font-size: 16px;
@@ -134,26 +134,50 @@
 // FORM VALIDATION
 .form-control span {
   visibility: hidden;
-  display: none;
 }
 
 .form-control.error span {
-  display: block;
   visibility: visible;
   display: block;
-  width: 232px;
-  padding-left: 25px;
-  color: #dc2626;
+  width: 303px;
+  color: #f03b3b;
+
+  font-size: 12px;
+  line-height: 1.7;
 
   @include mq(tablet) {
-    width: 367px;
+    width: 350px;
+    font-size: 14px;
+    line-height: 1.43;
   }
 }
 
 .form-control.success input {
-  border-color: #2ecc71;
+  border-color: var(--grey-txt);
+  color: var(--black-txt);
 }
 
 .form-control.error input {
-  border-color: #dc2626;
+  border-color: #f03b3b;
+  color: #f03b3b;
+}
+
+// POPUP
+.popup {
+  visibility: visible;
+  opacity: 1;
+
+  width: 335px;
+  min-height: 134px;
+  padding: 32px 78px;
+
+  @include mq(tablet) {
+    width: 470px;
+    min-height: 185px;
+    padding: 52px 79px;
+  }
+}
+
+.popup-title {
+  text-align: center;
 }

@@ -1,6 +1,7 @@
 <section class="section category" id="category">
   <div class="container">
-    <h2 class="category__section-title section-title">Category Of Our Menu</h2>
+    {% set sectionTitle = "Category Of Our Menu" %} {% set classList = "category__section-title"%}
+    {%include 'components/section-title.html' %}
     <ul class="category__list category__slick-slider">
       <li class="category__list-item">
         <picture>

@@ -7,8 +7,16 @@
   }
 }
 .header {
-  padding: 22px 0;
-  background-color: var(--primary-bg);
+  padding: 31px 0;
+
+  @include mq(tablet) {
+    padding: 24px 0;
+  }
+
+  @include mq(desktop) {
+    padding: 0;
+    padding-top: 24px;
+  }
 }
 .mobile-menu-btn {
   @include mq(desktop) {

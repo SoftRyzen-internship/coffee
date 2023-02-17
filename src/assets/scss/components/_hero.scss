@@ -141,7 +141,7 @@
 
 .hero__slider .slick-dots {
   position: absolute;
-  bottom: -18px;
+  bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -156,8 +156,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 18px;
-  width: 18px;
+  height: 12px;
+  width: 12px;
   list-style: none;
   // border: 1px solid rgb(247, 0, 255);
 }
@@ -167,7 +167,28 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 1px solid rgb(255, 0, 0);
+  border: 1px solid var(--brown-bg);
+}
+
+.hero__slider .slick-dots .slick-active {
+  position: relative;
+
+  height: 18px;
+  width: 18px;
+}
+
+.hero__slider .slick-dots .slick-active::before {
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 12px;
+  width: 12px;
+  background-color: var(--brown-bg);
+  border-radius: 50%;
 }
 
 //   .slick-dots {
@@ -211,23 +232,8 @@
 
 // BUTTON
 .hero__btn {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // z-index: 999;
-
-  display: flex;
-  align-items: center;
   padding: 19.5px 117.5px;
-  font-family: var(--Roboto);
-  font-size: 20px;
-  line-height: 1.15;
-  color: var(--white-txt);
-  margin: 0 auto;
-  background-color: var(--brown-bg);
-  border-radius: 40px;
   margin-top: 16px;
-  box-shadow: var(--btn-sd);
 
   @include mq(tablet) {
     position: absolute;

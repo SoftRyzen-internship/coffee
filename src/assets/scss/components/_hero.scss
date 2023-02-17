@@ -10,35 +10,35 @@
   }
 }
 
-.hero::before {
-  content: '';
+// .hero::before {
+//   content: '';
 
-  position: absolute;
-  top: 145px;
-  right: -400px;
-  z-index: -1;
+//   position: absolute;
+//   top: 145px;
+//   right: -400px;
+//   z-index: -1;
 
-  width: 629px;
-  height: 534px;
-  background-color: #fce5b8;
-  border-radius: 70px;
-  transform: rotate(42.14deg);
+//   width: 629px;
+//   height: 534px;
+//   background-color: #fce5b8;
+//   border-radius: 70px;
+//   transform: rotate(42.14deg);
 
-  @include mq(tablet) {
-    width: 617px;
-    height: 623px;
+//   @include mq(tablet) {
+//     width: 617px;
+//     height: 623px;
 
-    right: -290px;
-  }
+//     right: -290px;
+//   }
 
-  @include mq(desktop) {
-    width: 1046px;
-    height: 888px;
+//   @include mq(desktop) {
+//     width: 1046px;
+//     height: 888px;
 
-    top: -130px;
-    right: -550px;
-  }
-}
+//     top: -130px;
+//     right: -550px;
+//   }
+// }
 
 .hero__slider-wrapper {
   position: relative;

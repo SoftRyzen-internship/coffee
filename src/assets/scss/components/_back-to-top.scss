@@ -8,11 +8,13 @@
   }
 
   &__link {
-    opacity: 0.85;
+    opacity: 0.8;
     position: fixed;
-    bottom: -40px;
+    bottom: -60px;
     visibility: hidden;
-    transition: all var(--cubic-slow);
+    -webkit-transition: opacity var(--cubic-slow);
+    -o-transition: opacity var(--cubic-slow);
+    transition: opacity var(--cubic-slow);
     &:hover,
     &:focus {
       opacity: 1;
@@ -20,6 +22,7 @@
   }
 
   &__icon {
+    display: inline-block;
     fill: var(--brown-bg);
     width: 32px;
     height: 32px;
@@ -29,9 +32,6 @@
   }
 }
 .back-to-top__link.active {
-  bottom: 20px;
+  bottom: 60px;
   transition: all var(--cubic-slow);
-  @include mq(tablet) {
-    bottom: 40px;
-  }
 }

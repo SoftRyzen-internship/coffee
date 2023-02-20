@@ -139,10 +139,10 @@
   }
   @include mq(desktop) {
     width: 700px;
-    height: 707px;
+    height: 765px;
 
     top: 0px;
-    right: 0px;
+    right: -36px;
   }
 }
 
@@ -157,7 +157,8 @@
     right: -23px;
   }
   @include mq(desktop) {
-    top: -40px;
+    width: 660px;
+    top: -30px;
     right: -90px;
   }
 }
@@ -171,8 +172,8 @@
     right: 0;
   }
   @include mq(desktop) {
-    right: -100px;
-    top: -130px;
+    right: -83px;
+    top: -140px;
   }
 }
 

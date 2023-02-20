@@ -256,7 +256,17 @@
 }
 
 // BUTTON
+.hero__btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .hero__btn {
+  @media (max-width: 370px) {
+    padding: 19.5px 90px;
+  }
+
   padding: 19.5px 115.5px;
 
   @include mq(tablet) {

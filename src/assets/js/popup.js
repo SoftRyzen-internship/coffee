@@ -8,6 +8,8 @@ $(document).ready(function () {
   const modal = document.querySelector('[data-modal]');
   const modalWindow = document.querySelector('.modal');
 
+  const mobileMenu = document.querySelector('[data-menu]');
+
   openPopupBtn.forEach(function (btn) {
     btn.addEventListener('click', e => {
       e.preventDefault();
@@ -30,6 +32,13 @@ $(document).ready(function () {
 
   closePopupBtn.addEventListener('click', () => {
     closePopup();
-    body.classList.remove('scroll-hidden');
+
+    if (mobileMenu.classList.contains('is-open')) {
+      body.classList.add('scroll-hidden');
+    } else {
+      body.classList.remove('scroll-hidden');
+    }
+
+    // body.classList.remove('scroll-hidden');
   });
 });

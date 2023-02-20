@@ -52,7 +52,6 @@
 
   &__picture-coffee-dec {
     position: absolute;
-    right: 0;
   }
 
   // mobile
@@ -103,8 +102,9 @@
     }
 
     &__picture-coffee-dec {
-      max-width: 134px;
-      top: 0;
+      max-width: 300px;
+      top: -24px;
+      right: -221px;
     }
   }
 
@@ -193,7 +193,8 @@
     }
 
     &__picture-coffee-dec {
-      top: -300px;
+      top: -290px;
+      right: -443px;
     }
   }
 }

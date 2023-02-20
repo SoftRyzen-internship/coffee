@@ -6,10 +6,10 @@
   padding-top: 25px;
   // border: 1px solid rgb(0, 255, 72);
   @include mq(tablet) {
-    padding-top: 92px;
+    padding-top: 65px;
   }
 
-  @include mq(tablet) {
+  @include mq(desktop) {
     padding-top: 0px;
   }
 }
@@ -130,19 +130,19 @@
   height: 440px;
   // border: 1px solid rgb(4, 213, 255);
   @include mq(tablet) {
-    width: 413px;
-    height: 653px;
+    width: 455px;
+    height: 633px;
 
     position: absolute;
-    top: 52px;
-    right: 10px;
+    top: 115px;
+    right: -10px;
   }
   @include mq(desktop) {
-    width: 735px;
+    width: 700px;
     height: 707px;
 
-    top: 57px;
-    right: -46px;
+    top: 0px;
+    right: 0px;
   }
 }
 
@@ -151,8 +151,10 @@
     height: 460px;
   }
   @include mq(tablet) {
-    top: 20px;
-    right: -5px;
+    width: 400px;
+    height: 680px;
+    top: -20px;
+    right: -23px;
   }
   @include mq(desktop) {
     top: -40px;
@@ -165,7 +167,8 @@
     height: 490px;
   }
   @include mq(tablet) {
-    top: 0;
+    top: 50px;
+    right: 0;
   }
   @include mq(desktop) {
     right: -100px;
@@ -200,7 +203,7 @@
   margin: 0;
 
   @include mq(tablet) {
-    bottom: 50px;
+    bottom: 60px;
   }
 
   @include mq(desktop) {
@@ -257,7 +260,7 @@
 
   @include mq(tablet) {
     position: absolute;
-    top: 335px;
+    top: 415px;
     left: 0;
 
     padding: 19.5px 54px;

@@ -15,41 +15,41 @@
     &::before {
       content: '';
       position: absolute;
-      width: 122px;
-      height: 182px;
+      width: 285px;
+      height: 241px;
       z-index: 10;
       background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.png');
       background-repeat: no-repeat;
       background-position: top 0px right 0px;
       background-size: auto;
       top: -124px;
-      left: 0px;
+      left: -164px;
       @include mq(retina) {
         background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.png');
       }
 
       @include mq(tablet) {
-        width: 179px;
-        height: 248px;
+        width: 390px;
+        height: 332px;
         background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.png');
         background-repeat: no-repeat;
         background-position: top 0px right 0px;
         background-size: auto;
         top: -213px;
-        left: 0px;
+        left: -210px;
         @include mq(retina) {
           background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.png');
         }
       }
       @include mq(desktop) {
-        width: 288px;
-        height: 401px;
+        width: 632px;
+        height: 534px;
         background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.png');
         background-repeat: no-repeat;
         background-position: top 0px right 0px;
         background-size: auto;
         top: -315px;
-        left: -80px;
+        left: -422px;
         @include mq(retina) {
           background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.png');
         }
@@ -58,41 +58,41 @@
     .webp &::before {
       content: '';
       position: absolute;
-      width: 122px;
-      height: 182px;
+      width: 285px;
+      height: 241px;
       z-index: 10;
       background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.webp');
       background-repeat: no-repeat;
       background-position: top 0px right 0px;
       background-size: auto;
       top: -124px;
-      left: 0px;
+      left: -164px;
       @include mq(retina) {
         background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.webp');
       }
 
       @include mq(tablet) {
-        width: 179px;
-        height: 248px;
+        width: 390px;
+        height: 332px;
         background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.webp');
         background-repeat: no-repeat;
         background-position: top 0px right 0px;
         background-size: auto;
         top: -213px;
-        left: 0px;
+        left: -210px;
         @include mq(retina) {
           background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.webp');
         }
       }
       @include mq(desktop) {
-        width: 288px;
-        height: 401px;
+        width: 632px;
+        height: 534px;
         background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.webp');
         background-repeat: no-repeat;
         background-position: top 0px right 0px;
         background-size: auto;
         top: -315px;
-        left: -80px;
+        left: -422px;
         @include mq(retina) {
           background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.webp');
         }

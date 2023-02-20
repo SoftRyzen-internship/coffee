@@ -11,7 +11,7 @@ $('.category__slick-slider').slick({
   variableWidth: true,
   responsive: [
     {
-      breakpoint: 1439,
+      breakpoint: 1279,
       settings: {
         slidesToShow: 5,
         slidesToScroll: 5,

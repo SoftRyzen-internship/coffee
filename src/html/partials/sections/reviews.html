@@ -1,3 +1,385 @@
-<section class="reviews">
-  <h1>Reviews</h1>
+<section class="reviews" id="reviews">
+  <div class="reviews__container container">
+    {% set sectionTitle = "Loved by many customers" %} {% set classList = "reviews__section-title"%}
+    {%include 'components/section-title.html' %}
+    <i class="icon-left-quote"></i>
+    <div class="reviews__list reviews__slick-slider">
+      <div class="reviews__list-item">
+        <h3 class="reviews__slick-slide-title">About Americano coffee</h3>
+        <p class="reviews__slick-slide-text">
+          A cozy place with modern interior, delicious coffee and desserts, I recommend. Special
+          love to the americano coffee.
+        </p>
+        <div class="reviews__reviewer-container">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-1@1x.webp 1x,
+                ./assets/images/reviews/reviews-avatar-1@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-1@1x.png 1x,
+                ./assets/images/reviews/reviews-avatar-1@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="reviews__image"
+              src="./assets/images/reviews/reviews-avatar-1@1x.png"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </picture>
+          <div class="reviews__score-container">
+            <p class="reviews__reviewer-name">Jane Cooper</p>
+            <ul class="reviews__reviewer-score-list">
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__list-item">
+        <h3 class="reviews__slick-slide-title">Amazing Desserts</h3>
+        <p class="reviews__slick-slide-text">
+          Desserts are nice to look and very tasty, served in gloves, gloves are constantly
+          changing. A lot of interesting combinations.
+        </p>
+        <div class="reviews__reviewer-container">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-2@1x.webp 1x,
+                ./assets/images/reviews/reviews-avatar-2@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-2@1x.png 1x,
+                ./assets/images/reviews/reviews-avatar-2@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="reviews__image"
+              src="./assets/images/reviews/reviews-avatar-2@1x.png"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </picture>
+          <div class="reviews__score-container">
+            <p class="reviews__reviewer-name">Floyd Miles</p>
+            <ul class="reviews__reviewer-score-list">
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__list-item">
+        <h3 class="reviews__slick-slide-title">Best coffee</h3>
+        <p class="reviews__slick-slide-text">
+          Delicious desserts with unusual delicious combinations, the most delicious coffee in the
+          area and a cozy atmosphere
+        </p>
+        <div class="reviews__reviewer-container">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-3@1x.webp 1x,
+                ./assets/images/reviews/reviews-avatar-3@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-3@1x.png 1x,
+                ./assets/images/reviews/reviews-avatar-3@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="reviews__image"
+              src="./assets/images/reviews/reviews-avatar-3@1x.png"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </picture>
+          <div class="reviews__score-container">
+            <p class="reviews__reviewer-name">Kathryn Murphy</p>
+            <ul class="reviews__reviewer-score-list">
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__list-item">
+        <h3 class="reviews__slick-slide-title">Our Favorite Place</h3>
+        <p class="reviews__slick-slide-text">
+          Our favorite confectionery. It is very cozy atmosphere, special service and pleasant
+          staff. Coffee here is the most delicious.
+        </p>
+        <div class="reviews__reviewer-container">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-4@1x.webp 1x,
+                ./assets/images/reviews/reviews-avatar-4@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-4@1x.png 1x,
+                ./assets/images/reviews/reviews-avatar-4@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="reviews__image"
+              src="./assets/images/reviews/reviews-avatar-4@1x.png"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </picture>
+          <div class="reviews__score-container">
+            <p class="reviews__reviewer-name">Brooklyn Simmons</p>
+            <ul class="reviews__reviewer-score-list">
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__list-item">
+        <h3 class="reviews__slick-slide-title">Delicious Macarons</h3>
+        <p class="reviews__slick-slide-text">
+          One of the most delicious pasta and desserts in Kiev and definitely the most delicious
+          coffee. Recommend this place.
+        </p>
+        <div class="reviews__reviewer-container">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-5@1x.webp 1x,
+                ./assets/images/reviews/reviews-avatar-5@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./assets/images/reviews/reviews-avatar-5@1x.png 1x,
+                ./assets/images/reviews/reviews-avatar-5@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="reviews__image"
+              src="./assets/images/reviews/reviews-avatar-5@1x.png"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </picture>
+          <div class="reviews__score-container">
+            <p class="reviews__reviewer-name">Theresa Webb</p>
+            <ul class="reviews__reviewer-score-list">
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+              <li class="reviews__reviewer-score-item">
+                <img
+                  class="reviews__reviewer-score-image"
+                  src="./assets/images/reviews/reviews-star.svg"
+                  alt="yellow star"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% set paginationClass = "reviews__slick-slider-nav"%} {% include 'components/slider-dots.html'
+    %}
+  </div>
 </section>

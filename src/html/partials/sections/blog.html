@@ -1,9 +1,9 @@
-<section class="section blog" id="blog">
-  <div class="container">
+<section class="blog" id="blog">
+  <div class="blog__container container">
     {% set sectionTitle = "Our Lastest Blog" %} {% set classList = "blog__section-title"%} {%include
     'components/section-title.html' %}
-    <ul class="blog__list blog__slick-slider">
-      <li class="blog__list-item">
+    <div class="blog__list blog__slick-slider">
+      <div class="blog__list-item">
         <picture>
           <source
             srcset="
@@ -27,7 +27,7 @@
               ./assets/images/blog/tablet/tab-blog-1@1x.webp 1x,
               ./assets/images/blog/tablet/tab-blog-1@2x.webp 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/webp"
           />
           <source
@@ -35,7 +35,7 @@
               ./assets/images/blog/tablet/tab-blog-1@1x.png 1x,
               ./assets/images/blog/tablet/tab-blog-1@2x.png 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/png"
           />
 
@@ -67,12 +67,11 @@
         </picture>
         <h3 class="blog__slick-slide-title">History of coffe</h3>
         <p class="blog__slick-slide-text">
-          Lörem ipsum kara valiga, det artdöden någisk mesk i probel ipsum kara någisk mesk i
-          probel.
+          The history of coffee dates back to centuries of old oral tradition in the Middle East.
         </p>
-      </li>
+      </div>
 
-      <li class="blog__list-item">
+      <div class="blog__list-item">
         <picture>
           <source
             srcset="
@@ -96,7 +95,7 @@
               ./assets/images/blog/tablet/tab-blog-2@1x.webp 1x,
               ./assets/images/blog/tablet/tab-blog-2@2x.webp 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/webp"
           />
           <source
@@ -104,7 +103,7 @@
               ./assets/images/blog/tablet/tab-blog-2@1x.png 1x,
               ./assets/images/blog/tablet/tab-blog-2@2x.png 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/png"
           />
 
@@ -136,12 +135,12 @@
         </picture>
         <h3 class="blog__slick-slide-title">About Americano coffee</h3>
         <p class="blog__slick-slide-text">
-          Lörem ipsum kara valiga, det artdöden någisk mesk i probel ipsum kara någisk mesk i
-          probel.
+          Is a type of coffee drink prepared by diluting an espresso with hot water, giving it a
+          similar strength.
         </p>
-      </li>
+      </div>
 
-      <li class="blog__list-item">
+      <div class="blog__list-item">
         <picture>
           <source
             srcset="
@@ -165,7 +164,7 @@
               ./assets/images/blog/tablet/tab-blog-3@1x.webp 1x,
               ./assets/images/blog/tablet/tab-blog-3@2x.webp 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/webp"
           />
           <source
@@ -173,7 +172,7 @@
               ./assets/images/blog/tablet/tab-blog-3@1x.png 1x,
               ./assets/images/blog/tablet/tab-blog-3@2x.png 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/png"
           />
 
@@ -205,12 +204,11 @@
         </picture>
         <h3 class="blog__slick-slide-title">Coffe Break</h3>
         <p class="blog__slick-slide-text">
-          Lörem ipsum kara valiga, det artdöden någisk mesk i probel ipsum kara någisk mesk i
-          probel.
+          Coffee break is a short break format (15-30 minutes). During which you can relax.
         </p>
-      </li>
+      </div>
 
-      <li class="blog__list-item">
+      <div class="blog__list-item">
         <picture>
           <source
             srcset="
@@ -234,7 +232,7 @@
               ./assets/images/blog/tablet/tab-blog-4@1x.webp 1x,
               ./assets/images/blog/tablet/tab-blog-4@2x.webp 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/webp"
           />
           <source
@@ -242,7 +240,7 @@
               ./assets/images/blog/tablet/tab-blog-4@1x.png 1x,
               ./assets/images/blog/tablet/tab-blog-4@2x.png 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/png"
           />
 
@@ -272,14 +270,13 @@
             loading="lazy"
           />
         </picture>
-        <h3 class="blog__slick-slide-title">Lorem, ipsum dolor.</h3>
+        <h3 class="blog__slick-slide-title">The 8 Best Milk Frothers</h3>
         <p class="blog__slick-slide-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptates ut animi.
-          Vitae, similique minus.
+          So you're looking for the best milk frother? Well, we've got good news for you.
         </p>
-      </li>
+      </div>
 
-      <li class="blog__list-item">
+      <div class="blog__list-item">
         <picture>
           <source
             srcset="
@@ -300,7 +297,7 @@
               ./assets/images/blog/tablet/tab-blog-5@1x.webp 1x,
               ./assets/images/blog/tablet/tab-blog-5@2x.webp 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/webp"
           />
           <source
@@ -308,7 +305,7 @@
               ./assets/images/blog/tablet/tab-blog-5@1x.png 1x,
               ./assets/images/blog/tablet/tab-blog-5@2x.png 2x
             "
-            media="(max-width: 1439px)"
+            media="(max-width: 1279px)"
             type="image/png"
           />
 
@@ -338,13 +335,12 @@
             loading="lazy"
           />
         </picture>
-        <h3 class="blog__slick-slide-title">Lorem, ipsum dolor.</h3>
+        <h3 class="blog__slick-slide-title">Add Extra Flavor</h3>
         <p class="blog__slick-slide-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptates ut animi.
-          Vitae, similique minus.
+          Some of these flavored coffee combinations are strange,but trust us.
         </p>
-      </li>
-    </ul>
+      </div>
+    </div>
     {% set paginationClass = "blog__slick-slider-nav"%} {% include 'components/slider-dots.html' %}
   </div>
 </section>

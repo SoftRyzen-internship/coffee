@@ -58,39 +58,62 @@
       }
     }
     & .slick-next {
-      background: url('../images/menu-categories/arrow-active.svg');
+      background: url('../images/menu-categories/arrow-normal.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-
       right: -8px;
+      &:hover {
+        background: url('../images/menu-categories/arrow-hover.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      &:active {
+        background: url('../images/menu-categories/arrow-active.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
       @include mq(tablet) {
         right: -16px;
       }
       &.slick-disabled {
-        background: url('../images/menu-categories/arrow-disable.svg');
+        background: url('../images/menu-categories/arrow-disabled.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        transform: rotate(180deg);
+        transform: rotate(0deg);
       }
     }
     & .slick-prev {
-      background: url('../images/menu-categories/arrow-active.svg');
+      background: url('../images/menu-categories/arrow-normal.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       left: -8px;
       transform: rotate(180deg);
+      &:hover {
+        background: url('../images/menu-categories/arrow-hover.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      &:active {
+        background: url('../images/menu-categories/arrow-active.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
       @include mq(tablet) {
         left: -16px;
       }
       &.slick-disabled {
-        background: url('../images/menu-categories/arrow-disable.svg');
+        background: url('../images/menu-categories/arrow-disabled.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        transform: rotate(0deg);
+        transform: rotate(180deg);
       }
     }
     & .category__slick-slide-text {

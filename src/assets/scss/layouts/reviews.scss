@@ -22,7 +22,6 @@
         height: 205px;
         z-index: 10;
         background: url('../images/reviews/reviews-girl@1x.png');
-        background: url('../images/reviews/reviews-girl@1x.webp');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -30,7 +29,6 @@
         left: 32px;
         @include mq(retina) {
           background: url('../images/reviews/reviews-girl@2x.png');
-          background: url('../images/reviews/reviews-girl@2x.webp');
         }
       }
       @include mq(desktop) {
@@ -38,14 +36,44 @@
         height: 407px;
         z-index: 10;
         background: url('../images/reviews/reviews-girl@1x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        bottom: -95px;
+        left: 32px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-girl@2x.png');
+        }
+      }
+    }
+    .webp &::before {
+      @include mq(tablet) {
+        content: '';
+        position: absolute;
+        width: 192px;
+        height: 205px;
+        z-index: 10;
+        background: url('../images/reviews/reviews-girl@1x.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        bottom: 24px;
+        left: 32px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-girl@2x.webp');
+        }
+      }
+      @include mq(desktop) {
+        width: 381px;
+        height: 407px;
+        z-index: 10;
         background: url('../images/reviews/reviews-girl@1x.webp');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         bottom: -95px;
-        left: 111px;
+        left: 32px;
         @include mq(retina) {
-          background: url('../images/reviews/reviews-girl@2x.png');
           background: url('../images/reviews/reviews-girl@2x.webp');
         }
       }
@@ -53,11 +81,10 @@
     &::after {
       content: '';
       position: absolute;
-      width: 93px;
+      width: 237px;
       height: 252px;
       z-index: 10;
       background: url('../images/reviews/reviews-cup@1x.png');
-      background: url('../images/reviews/reviews-cup@1x.webp');
       background-repeat: no-repeat;
       background-position: top left;
       background-size: 237px 252px;
@@ -65,13 +92,11 @@
       left: 282px;
       @include mq(retina) {
         background: url('../images/reviews/reviews-cup@2x.png');
-        background: url('../images/reviews/reviews-cup@2x.webp');
       }
       @include mq(tablet) {
-        width: 110px;
+        width: 239px;
         height: 255px;
         background: url('../images/reviews/reviews-cup@1x.png');
-        background: url('../images/reviews/reviews-cup@1x.webp');
         background-repeat: no-repeat;
         background-position: top left;
         background-size: 239px 255px;
@@ -79,21 +104,60 @@
         left: 657px;
         @include mq(retina) {
           background: url('../images/reviews/reviews-cup@2x.png');
+        }
+      }
+      @include mq(desktop) {
+        width: 501px;
+        height: 534px;
+        background: url('../images/reviews/reviews-cup@1x.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 501px 534px;
+        bottom: -101px;
+        left: 1072px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-cup@2x.png');
+        }
+      }
+    }
+    .webp &::after {
+      content: '';
+      position: absolute;
+      width: 237px;
+      height: 252px;
+      z-index: 10;
+      background: url('../images/reviews/reviews-cup@1x.webp');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 237px 252px;
+      bottom: -154px;
+      left: 282px;
+      @include mq(retina) {
+        background: url('../images/reviews/reviews-cup@2x.webp');
+      }
+      @include mq(tablet) {
+        width: 239px;
+        height: 255px;
+        background: url('../images/reviews/reviews-cup@1x.webp');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 239px 255px;
+        bottom: -163px;
+        left: 657px;
+        @include mq(retina) {
           background: url('../images/reviews/reviews-cup@2x.webp');
         }
       }
       @include mq(desktop) {
-        width: 288px;
+        width: 501px;
         height: 534px;
-        background: url('../images/reviews/reviews-cup@1x.png');
         background: url('../images/reviews/reviews-cup@1x.webp');
         background-repeat: no-repeat;
         background-position: top left;
         background-size: 501px 534px;
         bottom: -101px;
-        left: 1151px;
+        left: 1072px;
         @include mq(retina) {
-          background: url('../images/reviews/reviews-cup@2x.png');
           background: url('../images/reviews/reviews-cup@2x.webp');
         }
       }
@@ -104,13 +168,12 @@
   }
   &__section-title {
     display: block;
-    width: 285px;
+    width: 288px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 85px;
-
     @include mq(tablet) {
-      width: 471px;
+      width: 480px;
       margin-bottom: 68px;
     }
     @include mq(desktop) {
@@ -125,26 +188,26 @@
       @include mq(tablet) {
         content: '';
         position: absolute;
-        width: 245px;
+        width: 794px;
         height: 737px;
         z-index: 0;
         background: url('../images/reviews/tab-reviews-box.svg');
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
-        top: -225px;
-        left: -287px;
+        top: -255px;
+        right: 425px;
       }
       @include mq(desktop) {
-        width: 538px;
+        width: 1110px;
         height: 1044px;
         z-index: 0;
         background: url('../images/reviews/desc-reviews-box.svg');
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
-        top: -377px;
-        left: -645px;
+        top: -407px;
+        right: 492px;
       }
     }
     @include mq(tablet) {

@@ -1,8 +1,16 @@
 .about-us {
   // common
-  position: relative;
 
   background-color: var(--primary-bg);
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
 
   &__item {
     display: flex;
@@ -44,7 +52,6 @@
 
   &__picture-coffee-dec {
     position: absolute;
-    right: 0;
   }
 
   // mobile
@@ -95,8 +102,9 @@
     }
 
     &__picture-coffee-dec {
-      max-width: 134px;
-      top: 0;
+      max-width: 284px;
+      top: 0px;
+      right: -196px;
     }
   }
 
@@ -116,7 +124,9 @@
     }
 
     &__picture-coffee-dec {
-      top: -45px;
+      max-width: 564px;
+      top: -150px;
+      right: -342px;
     }
   }
 
@@ -185,7 +195,8 @@
     }
 
     &__picture-coffee-dec {
-      top: -55px;
+      top: -259px;
+      right: -442px;
     }
   }
 }

@@ -26,8 +26,18 @@
     }
   }
   &__slick-slider {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(mobile) {
+      width: auto;
+    }
     & .slick-slide {
+      width: 132px;
       margin-left: 16px;
+      @include mq(mobile) {
+        width: auto;
+      }
       @include mq(tablet) {
         margin-left: 37px;
       }

@@ -3,7 +3,7 @@ import 'slick-carousel';
 import { smoothScroll } from './scroll';
 
 $('.category__slick-slider').slick({
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   mobileFirst: true,
   infinite: false,
@@ -11,6 +11,12 @@ $('.category__slick-slider').slick({
   dots: false,
   variableWidth: true,
   responsive: [
+    {
+      breakpoint: 374,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
     {
       breakpoint: 1279,
       settings: {

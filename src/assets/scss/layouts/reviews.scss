@@ -128,33 +128,23 @@
         width: 245px;
         height: 737px;
         z-index: 0;
-        background: url('../images/reviews/tab-reviews-box@1x.png');
-        background: url('../images/reviews/tab-reviews-box@1x.webp');
+        background: url('../images/reviews/tab-reviews-box.svg');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top right;
         background-size: cover;
         top: -225px;
         left: -287px;
-        @include mq(retina) {
-          background: url('../images/reviews/tab-reviews-box@2x.png');
-          background: url('../images/reviews/tab-reviews-box@2x.webp');
-        }
       }
       @include mq(desktop) {
         width: 538px;
         height: 1044px;
         z-index: 0;
-        background: url('../images/reviews/desc-reviews-box@1x.png');
-        background: url('../images/reviews/desc-reviews-box@1x.webp');
+        background: url('../images/reviews/desc-reviews-box.svg');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top right;
         background-size: cover;
         top: -377px;
         left: -645px;
-        @include mq(retina) {
-          background: url('../images/reviews/desc-reviews-box@2x.png');
-          background: url('../images/reviews/desc-reviews-box@2x.webp');
-        }
       }
     }
     @include mq(tablet) {

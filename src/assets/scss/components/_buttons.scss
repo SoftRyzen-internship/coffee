@@ -3,6 +3,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  border: 1px solid var(--brown-bg);
   color: var(--white-txt);
   background: var(--brown-bg);
   box-shadow: var(--btn-sd);
@@ -13,10 +14,18 @@
   font-size: 20px;
   line-height: 1.15;
 
-  &:hover,
-  &:focus {
-    color: var(--black-txt);
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--black-txt);
+      border: 1px solid var(--black-txt);
+      background: transparent;
+    }
+  }
+
+  &:active {
+    color: var(--white-txt);
     border: 1px solid var(--black-txt);
-    background: transparent;
+    background: var(--black-txt);
   }
 }

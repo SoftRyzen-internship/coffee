@@ -11,6 +11,8 @@ html {
 body {
   font-family: var(--Roboto);
   color: var(--black-txt);
+  background-color: var(--primary-bg);
+  overflow-x: hidden;
 }
 
 a {

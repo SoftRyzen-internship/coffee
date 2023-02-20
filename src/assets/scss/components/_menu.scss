@@ -11,7 +11,7 @@
     @include mq(mobile-only) {
       display: none;
     }
-    @include mq(tablet) {
+    @include mq(tablet-only) {
       margin-right: 52px;
     }
     @include mq(desktop) {

@@ -1,11 +1,15 @@
+.hero__slider {
+  visibility: hidden;
+}
+
 .hero {
-  padding-top: 55.4px;
+  padding-top: 25px;
   // border: 1px solid rgb(0, 255, 72);
   @include mq(tablet) {
-    padding-top: 92px;
+    padding-top: 65px;
   }
 
-  @include mq(tablet) {
+  @include mq(desktop) {
     padding-top: 0px;
   }
 }
@@ -41,7 +45,7 @@
     height: 888px;
 
     top: -180px;
-    right: -530px;
+    right: -550px;
   }
 }
 
@@ -85,6 +89,12 @@
   }
 }
 
+.hero__title--croissants {
+  @include mq(mobile-only) {
+    margin-bottom: 15px;
+  }
+}
+
 .hero__text {
   font-family: var(--Playfair-Display);
   font-weight: 400;
@@ -107,7 +117,7 @@
   }
 }
 .hero__text--cake {
-  width: 275px;
+  width: 295px;
   @include mq(tablet) {
     width: 587px;
   }
@@ -117,51 +127,53 @@
 .hero__picture {
   display: flex;
   align-items: flex-end;
-  height: 454px;
+  height: 440px;
   // border: 1px solid rgb(4, 213, 255);
   @include mq(tablet) {
-    width: 413px;
-    height: 653px;
+    width: 455px;
+    height: 633px;
 
     position: absolute;
-    top: 52px;
-    right: 10px;
+    top: 115px;
+    right: -10px;
   }
   @include mq(desktop) {
-    width: 735px;
-    height: 707px;
+    width: 700px;
+    height: 765px;
 
-    top: 55px;
-    right: -46px;
+    top: 0px;
+    right: -36px;
   }
 }
 
 .hero__picture--croissants {
   @include mq(mobile-only) {
-    height: 490px;
+    height: 460px;
   }
   @include mq(tablet) {
-    top: 20px;
-    right: -5px;
+    width: 400px;
+    height: 680px;
+    top: -20px;
+    right: -23px;
   }
   @include mq(desktop) {
-    top: -40px;
+    width: 660px;
+    top: -30px;
     right: -90px;
   }
 }
 
 .hero__picture--cake {
   @include mq(mobile-only) {
-    height: 510px;
+    height: 490px;
   }
   @include mq(tablet) {
-    top: 0;
+    top: 50px;
+    right: 0;
   }
   @include mq(desktop) {
-    // width: 630px;
-    // height: 572px;
-    right: -100px;
-    top: -130px;
+    right: -83px;
+    top: -140px;
   }
 }
 
@@ -178,16 +190,10 @@
   }
 }
 
-// .hero__slider .slick-slide {
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: flex-end;
-// }
-
 // SLIDER dots
 .hero__slider .slick-dots {
   position: absolute;
-  bottom: -12px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -198,7 +204,7 @@
   margin: 0;
 
   @include mq(tablet) {
-    bottom: 50px;
+    bottom: 60px;
   }
 
   @include mq(desktop) {
@@ -251,12 +257,11 @@
 
 // BUTTON
 .hero__btn {
-  padding: 19.5px 117.5px;
-  margin-top: 30px;
+  padding: 19.5px 115.5px;
 
   @include mq(tablet) {
     position: absolute;
-    top: 335px;
+    top: 415px;
     left: 0;
 
     padding: 19.5px 54px;

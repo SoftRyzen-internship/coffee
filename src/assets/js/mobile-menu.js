@@ -20,9 +20,13 @@
   function toggleMenu() {
     openMenuBtn.classList.toggle('is-active');
     mobileMenu.classList.toggle('is-open');
-    body.classList.toggle('scroll-hidden');
     backdropMenu.classList.toggle('is-hidden-menu');
-    // removes a listener to close btn
+    if (mobileMenu.classList.contains('is-open')) {
+      body.classList.add('scroll-hidden');
+    } else {
+      body.classList.remove('scroll-hidden');
+    }
+
     btnMenuClose.removeEventListener('click', toggleMenu);
   }
 

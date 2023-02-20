@@ -1,5 +1,5 @@
 <div class="mobile-menu" data-menu>
-  <div class="container">
+  <div class="container mobile-menu__container">
     <div class="mobile-menu__top">
       <a href="/" class="link header__logo" aria-label="logo">
         <span>C</span><i class="icon-logo-coffee-frame"></i><span>ffee</span>
@@ -12,6 +12,8 @@
       ></button>
     </div>
     {% set classNav= "nav-mobile" %}{% set classNavList= "nav-list-mobile" %}{% set
-    classBtnPosition= "nav__btn-mobile-position" %}{% include 'components/nav-menu.html' %}
+    classBtnPosition= "nav-btn nav__btn-mobile-position" %}{% set classNavListItem=
+    "mobile-menu__navline-wrapper" %}{% set classNavItemLink= "mobile-menu__navline" %}{% include
+    'components/nav-menu.html' %}
   </div>
 </div>

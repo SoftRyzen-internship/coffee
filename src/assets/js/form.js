@@ -1,10 +1,9 @@
 const form = document.getElementById('form');
 const sendBtn = document.querySelector('.send__btn');
+const openModalBtn = document.querySelector('[data-menu-btn]');
 
 const username = document.getElementById('name');
 const phone = document.getElementById('telephone');
-
-const modal = document.querySelector('[data-modal]');
 
 // SET DISABLED BUTTON
 sendBtn.setAttribute('disabled', 'disabled');
@@ -15,7 +14,7 @@ const isValidValues = {
 };
 
 // SET DISABLED BUTTON
-modal.addEventListener('click', () => {
+openModalBtn.addEventListener('click', () => {
   sendBtn.setAttribute('disabled', 'disabled');
 });
 

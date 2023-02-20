@@ -12,6 +12,7 @@
     margin-right: 8px;
     border: 1px solid var(--brown-bg);
     border-radius: 50%;
+    cursor: pointer;
   }
   & .slick-slide.slick-active {
     display: block;
@@ -23,6 +24,7 @@
     position: relative;
     width: 18px;
     height: 18px;
+    cursor: auto;
     &::before {
       content: '';
       position: absolute;

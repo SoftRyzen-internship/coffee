@@ -1,0 +1,37 @@
+.back-to-top {
+  position: relative;
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 100;
+  }
+
+  &__link {
+    opacity: 0.8;
+    position: fixed;
+    bottom: -60px;
+    visibility: hidden;
+    -webkit-transition: opacity var(--cubic-slow);
+    -o-transition: opacity var(--cubic-slow);
+    transition: opacity var(--cubic-slow);
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    fill: var(--brown-bg);
+    width: 32px;
+    height: 32px;
+    margin: 0 100% 0 -100%;
+    visibility: visible;
+    cursor: pointer;
+  }
+}
+.back-to-top__link.active {
+  bottom: 60px;
+  transition: all var(--cubic-slow);
+}

@@ -1,6 +1,5 @@
 .header {
   padding-top: 24px;
-  background-color: var(--primary-bg);
   &__container {
     display: flex;
     align-items: center;
@@ -44,14 +43,19 @@
     }
   }
 }
+.header {
+  padding: 31px 0;
 
-.icon-logo-coffee-frame {
-  margin: 0px 3px;
-  color: var(--header-logo);
   @include mq(tablet) {
-    margin: 0px 4px;
+    padding: 24px 0;
+  }
+
+  @include mq(desktop) {
+    padding: 0;
+    padding-top: 24px;
   }
 }
+
 .mobile-menu-btn {
   @include mq(desktop) {
     display: none;

@@ -104,7 +104,7 @@
     transition: color var(--cubic);
     &:hover,
     &:focus {
-      color: var(--header-logo);
+      color: var(--coffee-kinds-bg);
     }
   }
 
@@ -151,7 +151,7 @@
     transition: color var(--cubic);
     &:hover,
     &:focus {
-      color: var(--header-logo);
+      color: var(--coffee-kinds-bg);
     }
   }
 }
@@ -181,6 +181,7 @@
       -webkit-transform: scale(1.15);
       -ms-transform: scale(1.15);
       transform: scale(1.15);
+      color: var(--coffee-kinds-bg);
     }
   }
 }
@@ -207,7 +208,7 @@
     transition: color var(--cubic);
     &:hover,
     &:focus {
-      color: var(--header-logo);
+      color: var(--coffee-kinds-bg);
     }
   }
 

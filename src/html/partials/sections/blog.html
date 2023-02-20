@@ -1,6 +1,7 @@
 <section class="section blog" id="blog">
   <div class="container">
-    <h2 class="blog__section-title section-title">Our Lastest Blog</h2>
+    {% set sectionTitle = "Our Lastest Blog" %} {% set classList = "blog__section-title"%} {%include
+    'components/section-title.html' %}
     <ul class="blog__list blog__slick-slider">
       <li class="blog__list-item">
         <picture>
@@ -43,7 +44,7 @@
               ./assets/images/blog/desktop/desc-blog-1@1x.webp 1x,
               ./assets/images/blog/desktop/desc-blog-1@2x.webp 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/webp"
           />
           <source
@@ -51,12 +52,12 @@
               ./assets/images/blog/desktop/desc-blog-1@1x.png 1x,
               ./assets/images/blog/desktop/desc-blog-1@2x.png 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/png"
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-1@1x.png"
             alt=""
             width="159"
@@ -112,7 +113,7 @@
               ./assets/images/blog/desktop/desc-blog-2@1x.webp 1x,
               ./assets/images/blog/desktop/desc-blog-2@2x.webp 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/webp"
           />
           <source
@@ -120,12 +121,12 @@
               ./assets/images/blog/desktop/desc-blog-2@1x.png 1x,
               ./assets/images/blog/desktop/desc-blog-2@2x.png 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/png"
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-2@1x.png"
             alt=""
             width="159"
@@ -181,7 +182,7 @@
               ./assets/images/blog/desktop/desc-blog-3@1x.webp 1x,
               ./assets/images/blog/desktop/desc-blog-3@2x.webp 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/webp"
           />
           <source
@@ -189,12 +190,12 @@
               ./assets/images/blog/desktop/desc-blog-3@1x.png 1x,
               ./assets/images/blog/desktop/desc-blog-3@2x.png 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/png"
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-3@1x.png"
             alt=""
             width="159"
@@ -250,7 +251,7 @@
               ./assets/images/blog/desktop/desc-blog-4@1x.webp 1x,
               ./assets/images/blog/desktop/desc-blog-4@2x.webp 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/webp"
           />
           <source
@@ -258,12 +259,12 @@
               ./assets/images/blog/desktop/desc-blog-4@1x.png 1x,
               ./assets/images/blog/desktop/desc-blog-4@2x.png 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/png"
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-4@1x.png"
             alt=""
             width="159"
@@ -316,7 +317,7 @@
               ./assets/images/blog/desktop/desc-blog-5@1x.webp 1x,
               ./assets/images/blog/desktop/desc-blog-5@2x.webp 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/webp"
           />
           <source
@@ -324,12 +325,12 @@
               ./assets/images/blog/desktop/desc-blog-5@1x.png 1x,
               ./assets/images/blog/desktop/desc-blog-5@2x.png 2x
             "
-            media="(min-width: 1440px)"
+            media="(min-width: 1280px)"
             type="image/png"
           />
 
           <img
-            class="buy__image"
+            class="blog__image"
             src="./assets/images/blog/mobile/mob-blog-5@1x.png"
             alt=""
             width="159"
@@ -344,5 +345,6 @@
         </p>
       </li>
     </ul>
+    {% set paginationClass = "blog__slick-slider-nav"%} {% include 'components/slider-dots.html' %}
   </div>
 </section>

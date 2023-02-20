@@ -15,6 +15,7 @@
   --brown-bg: #603322;
   --footer-bg: #1c0c01;
   --menu-bg: #f3f3f3;
+  --header-logo: #773300;
 
   /* SHADOWS */
   --btn-sd: 5px 79px 32px rgba(28, 25, 23, 0.01), 3px 44px 27px rgba(28, 25, 23, 0.05),
@@ -31,4 +32,5 @@
 
   /* TRANSITION */
   --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }

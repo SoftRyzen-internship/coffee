@@ -1,3 +1,7 @@
+.hero__slider {
+  visibility: hidden;
+}
+
 .hero {
   padding-top: 55.4px;
   // border: 1px solid rgb(0, 255, 72);
@@ -131,7 +135,7 @@
     width: 735px;
     height: 707px;
 
-    top: 55px;
+    top: 57px;
     right: -46px;
   }
 }
@@ -177,12 +181,6 @@
     height: 762px;
   }
 }
-
-// .hero__slider .slick-slide {
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: flex-end;
-// }
 
 // SLIDER dots
 .hero__slider .slick-dots {
@@ -264,4 +262,9 @@
   @include mq(desktop) {
     top: 484px;
   }
+}
+
+// HIDE INACTIVE SLIDES
+.hidden-slides {
+  visibility: hidden;
 }

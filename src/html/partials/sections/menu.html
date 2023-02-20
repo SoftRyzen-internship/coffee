@@ -1,3 +1,1505 @@
-<section class="menu">
-  <h1>Menu</h1>
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="menu__title">
+      {% set sectionTitle = "Your Favorite Menu" %} {% include 'components/section-title.html' %}
+    </div>
+
+    <ul class="menu__part">
+      <li>
+        <p class="menu__subtitle">Drinks</p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/espresso.webp    1x,
+                  ./assets/images/menu/mobile/drinks/espresso@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/espresso.png    1x,
+                  ./assets/images/menu/mobile/drinks/espresso@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/espresso.webp    1x,
+                  ./assets/images/menu/tablet/drinks/espresso@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/espresso.png    1x,
+                  ./assets/images/menu/tablet/drinks/espresso@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/espresso.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Espresso</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">2,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/americano.webp    1x,
+                  ./assets/images/menu/mobile/drinks/americano@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/americano.png    1x,
+                  ./assets/images/menu/mobile/drinks/americano@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/americano.webp    1x,
+                  ./assets/images/menu/tablet/drinks/americano@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/americano.png    1x,
+                  ./assets/images/menu/tablet/drinks/americano@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/drinks/americano.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Americano</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,12</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/capuchino.webp    1x,
+                  ./assets/images/menu/mobile/drinks/capuchino@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/capuchino.png    1x,
+                  ./assets/images/menu/mobile/drinks/capuchino@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/capuchino.webp    1x,
+                  ./assets/images/menu/tablet/drinks/capuchino@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/capuchino.png    1x,
+                  ./assets/images/menu/tablet/drinks/capuchino@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/drinks/capuchino.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Capuchino</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">4,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/turkish.webp    1x,
+                  ./assets/images/menu/mobile/drinks/turkish@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/turkish.png    1x,
+                  ./assets/images/menu/mobile/drinks/turkish@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/turkish.webp    1x,
+                  ./assets/images/menu/tablet/drinks/turkish@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/turkish.png    1x,
+                  ./assets/images/menu/tablet/drinks/turkish@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/drinks/turkish.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Turkish</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/caramel.webp    1x,
+                  ./assets/images/menu/mobile/drinks/caramel@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/caramel.png    1x,
+                  ./assets/images/menu/mobile/drinks/caramel@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/caramel.webp    1x,
+                  ./assets/images/menu/tablet/drinks/caramel@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/caramel.png    1x,
+                  ./assets/images/menu/tablet/drinks/caramel@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/drinks/caramel.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name menu__name-l">Caramel Late</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">5,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/vanilla.webp    1x,
+                  ./assets/images/menu/mobile/drinks/vanilla@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/drinks/vanilla.png    1x,
+                  ./assets/images/menu/mobile/drinks/vanilla@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/vanilla.webp    1x,
+                  ./assets/images/menu/tablet/drinks/vanilla@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/drinks/vanilla.png    1x,
+                  ./assets/images/menu/tablet/drinks/vanilla@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/drinks/vanilla.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name menu__name-l">Vanilla Late</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">5,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__x">
+        <p class="menu__subtitle">Deserts</p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/cheesecake.webp    1x,
+                  ./assets/images/menu/mobile/deserts/cheesecake@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/cheesecake.png    1x,
+                  ./assets/images/menu/mobile/deserts/cheesecake@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/cheesecake.webp    1x,
+                  ./assets/images/menu/tablet/deserts/cheesecake@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/cheesecake.png    1x,
+                  ./assets/images/menu/tablet/deserts/cheesecake@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/cheesecake.png"
+                alt="desert"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Сheesecake</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">7,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/strawberry.webp    1x,
+                  ./assets/images/menu/mobile/deserts/strawberry@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/strawberry.png    1x,
+                  ./assets/images/menu/mobile/deserts/strawberry@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/strawberry.webp    1x,
+                  ./assets/images/menu/tablet/deserts/strawberry@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/strawberry.png    1x,
+                  ./assets/images/menu/tablet/deserts/strawberry@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/deserts/strawberry.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name menu__name-c-ll">Strawberry cupcake</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,12</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/chocolate.webp    1x,
+                  ./assets/images/menu/mobile/deserts/chocolate@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/chocolate.png    1x,
+                  ./assets/images/menu/mobile/deserts/chocolate@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/chocolate.webp    1x,
+                  ./assets/images/menu/tablet/deserts/chocolate@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/chocolate.png    1x,
+                  ./assets/images/menu/tablet/deserts/chocolate@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/deserts/chocolate.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name menu__name-c-ll">Chocolate cupcake</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">4,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/donut.webp    1x,
+                  ./assets/images/menu/mobile/deserts/donut@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/donut.png    1x,
+                  ./assets/images/menu/mobile/deserts/donut@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/donut.webp    1x,
+                  ./assets/images/menu/tablet/deserts/donut@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/donut.png    1x,
+                  ./assets/images/menu/tablet/deserts/donut@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/deserts/donut.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Donut</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/tube.webp    1x,
+                  ./assets/images/menu/mobile/deserts/tube@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/tube.png    1x,
+                  ./assets/images/menu/mobile/deserts/tube@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/tube.webp    1x,
+                  ./assets/images/menu/tablet/deserts/tube@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/tube.png    1x,
+                  ./assets/images/menu/tablet/deserts/tube@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/deserts/tube.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name menu__name-c-l">Tube with cream</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">5,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/tiramisu.webp    1x,
+                  ./assets/images/menu/mobile/deserts/tiramisu@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/deserts/tiramisu.png    1x,
+                  ./assets/images/menu/mobile/deserts/tiramisu@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/tiramisu.webp    1x,
+                  ./assets/images/menu/tablet/deserts/tiramisu@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/deserts/tiramisu.png    1x,
+                  ./assets/images/menu/tablet/deserts/tiramisu@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/deserts/tiramisu.png"
+                alt="drink"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Tiramisu</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">5,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__x">
+        <p class="menu__subtitle">Macarons</p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/strawberry.webp    1x,
+                  ./assets/images/menu/mobile/macarons/strawberry@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/strawberry.png    1x,
+                  ./assets/images/menu/mobile/macarons/strawberry@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/strawberry.webp    1x,
+                  ./assets/images/menu/tablet/macarons/strawberry@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/strawberry.png    1x,
+                  ./assets/images/menu/tablet/macarons/strawberry@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/macarons/strawberry.png"
+                alt="macaron"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Strawberry</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">7,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/peach.webp    1x,
+                  ./assets/images/menu/mobile/macarons/peach@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/peach.png    1x,
+                  ./assets/images/menu/mobile/macarons/peach@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/peach.webp    1x,
+                  ./assets/images/menu/tablet/macarons/peach@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/peach.png    1x,
+                  ./assets/images/menu/tablet/macarons/peach@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/macarons/peach.png"
+                alt="macaron"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Peach</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">4,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/salted.webp    1x,
+                  ./assets/images/menu/mobile/macarons/salted@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/salted.png    1x,
+                  ./assets/images/menu/mobile/macarons/salted@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/salted.webp    1x,
+                  ./assets/images/menu/tablet/macarons/salted@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/salted.png    1x,
+                  ./assets/images/menu/tablet/macarons/salted@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/macarons/salted.png"
+                alt="macaron"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Salted</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,12</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/orange.webp    1x,
+                  ./assets/images/menu/mobile/macarons/orange@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/orange.png    1x,
+                  ./assets/images/menu/mobile/macarons/orange@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/orange.webp    1x,
+                  ./assets/images/menu/tablet/macarons/orange@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/orange.png    1x,
+                  ./assets/images/menu/tablet/macarons/orange@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/macarons/orange.png"
+                alt="macaron"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Orange</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/pomegranate.webp    1x,
+                  ./assets/images/menu/mobile/macarons/pomegranate@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/pomegranate.png    1x,
+                  ./assets/images/menu/mobile/macarons/pomegranate@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/pomegranate.webp    1x,
+                  ./assets/images/menu/tablet/macarons/pomegranate@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/pomegranate.png    1x,
+                  ./assets/images/menu/tablet/macarons/pomegranate@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/macarons/pomegranate.png"
+                alt="macaron"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Pomegranate</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">5,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/chocolate.webp    1x,
+                  ./assets/images/menu/mobile/macarons/chocolate@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/macarons/chocolate.png    1x,
+                  ./assets/images/menu/mobile/macarons/chocolate@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/chocolate.webp    1x,
+                  ./assets/images/menu/tablet/macarons/chocolate@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/macarons/chocolate.png    1x,
+                  ./assets/images/menu/tablet/macarons/chocolate@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/macarons/chocolate.png"
+                alt="macaron"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Chocolate</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">5,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__x">
+        <p class="menu__subtitle">Sandwichs</p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/sandwichs/ham.webp    1x,
+                  ./assets/images/menu/mobile/sandwichs/ham@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/sandwichs/ham.png    1x,
+                  ./assets/images/menu/mobile/sandwichs/ham@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/sandwichs/ham.webp    1x,
+                  ./assets/images/menu/tablet/sandwichs/ham@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/sandwichs/ham.png    1x,
+                  ./assets/images/menu/tablet/sandwichs/ham@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/sandwichs/ham.png"
+                alt="sandwich"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name menu__name-s">Sandwich with ham</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">7,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/sandwichs/chicken.webp    1x,
+                  ./assets/images/menu/mobile/sandwichs/chicken@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/sandwichs/chicken.png    1x,
+                  ./assets/images/menu/mobile/sandwichs/chicken@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/sandwichs/chicken.webp    1x,
+                  ./assets/images/menu/tablet/sandwichs/chicken@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/sandwichs/chicken.png    1x,
+                  ./assets/images/menu/tablet/sandwichs/chicken@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/sandwichs/chicken.png"
+                alt="sandwich"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name menu__name-s-l">Sandwich with chicken</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">4,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__x">
+        <p class="menu__subtitle">Baking</p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/croissant.webp    1x,
+                  ./assets/images/menu/mobile/baking/croissant@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/croissant.png    1x,
+                  ./assets/images/menu/mobile/baking/croissant@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/croissant.webp    1x,
+                  ./assets/images/menu/tablet/baking/croissant@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/croissant.png    1x,
+                  ./assets/images/menu/tablet/baking/croissant@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/baking/croissant.png"
+                alt="croissant"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Croissant</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">7,15</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/pretzel.webp    1x,
+                  ./assets/images/menu/mobile/baking/pretzel@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/pretzel.png    1x,
+                  ./assets/images/menu/mobile/baking/pretzel@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/pretzel.webp    1x,
+                  ./assets/images/menu/tablet/baking/pretzel@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/pretzel.png    1x,
+                  ./assets/images/menu/tablet/baking/pretzel@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/baking/pretzel.png"
+                alt="pretzel"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Pretzel</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,12</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/roll.webp    1x,
+                  ./assets/images/menu/mobile/baking/roll@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/roll.png    1x,
+                  ./assets/images/menu/mobile/baking/roll@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/roll.webp    1x,
+                  ./assets/images/menu/tablet/baking/roll@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/roll.png    1x,
+                  ./assets/images/menu/tablet/baking/roll@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/baking/roll.png"
+                alt="roll"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Roll</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">4,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__picture">
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/cake.webp    1x,
+                  ./assets/images/menu/mobile/baking/cake@2x.webp 2x
+                "
+                type="image/webp"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/mobile/baking/cake.png    1x,
+                  ./assets/images/menu/mobile/baking/cake@2x.png 2x
+                "
+                type="image/png"
+                media="(max-width: 767px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/cake.webp    1x,
+                  ./assets/images/menu/tablet/baking/cake@2x.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+
+              <source
+                srcset="
+                  ./assets/images/menu/tablet/baking/cake.png    1x,
+                  ./assets/images/menu/tablet/baking/cake@2x.png 2x
+                "
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="menu__img"
+                src="./assets/images/menu/tablet/baking/cake.png"
+                alt="cake"
+                width="120"
+                height="112"
+                loading="lazy"
+              />
+            </picture>
+
+            <div class="menu__info-wrapper">
+              <div class="menu__name-wrapper">
+                <p class="menu__name">Cake</p>
+                <div class="menu__name-line"></div>
+
+                <div class="menu__price-wrapper">
+                  <i class="menu__icon icon2 icon-dollar"></i>
+                  <p class="menu__price">3,55</p>
+                </div>
+              </div>
+              <p class="menu__text">Lörem ipsum kara valiga, det artdöden</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      
+      <button class="menu__btn btn" type="button">View all menu</button>
+    </ul>
+  </div>
 </section>

@@ -6,7 +6,7 @@ $(document).ready(function () {
   if (backToTop.length) {
     $(window).scroll(function () {
       let scrolled = $(window).scrollTop();
-      console.log(scrolled);
+      // console.log(scrolled);
 
       if (scrolled > 300) {
         backToTop.addClass('active');

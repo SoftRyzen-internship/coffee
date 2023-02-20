@@ -12,7 +12,7 @@ $('.blog__slick-slider').slick({
   asNavFor: '.blog__slick-slider-nav',
   responsive: [
     {
-      breakpoint: 1439,
+      breakpoint: 1279,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,

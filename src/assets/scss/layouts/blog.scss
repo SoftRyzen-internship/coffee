@@ -10,7 +10,94 @@
     padding-bottom: 60px;
   }
   &__container {
+    position: relative;
     margin: 0 auto;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 122px;
+      height: 182px;
+      z-index: 10;
+      background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.png');
+      background-repeat: no-repeat;
+      background-position: top 0px right 0px;
+      background-size: auto;
+      top: -124px;
+      left: 0px;
+      @include mq(retina) {
+        background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.png');
+      }
+
+      @include mq(tablet) {
+        width: 179px;
+        height: 248px;
+        background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.png');
+        background-repeat: no-repeat;
+        background-position: top 0px right 0px;
+        background-size: auto;
+        top: -213px;
+        left: 0px;
+        @include mq(retina) {
+          background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.png');
+        }
+      }
+      @include mq(desktop) {
+        width: 288px;
+        height: 401px;
+        background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.png');
+        background-repeat: no-repeat;
+        background-position: top 0px right 0px;
+        background-size: auto;
+        top: -315px;
+        left: -80px;
+        @include mq(retina) {
+          background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.png');
+        }
+      }
+    }
+    .webp &::before {
+      content: '';
+      position: absolute;
+      width: 122px;
+      height: 182px;
+      z-index: 10;
+      background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.webp');
+      background-repeat: no-repeat;
+      background-position: top 0px right 0px;
+      background-size: auto;
+      top: -124px;
+      left: 0px;
+      @include mq(retina) {
+        background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.webp');
+      }
+
+      @include mq(tablet) {
+        width: 179px;
+        height: 248px;
+        background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.webp');
+        background-repeat: no-repeat;
+        background-position: top 0px right 0px;
+        background-size: auto;
+        top: -213px;
+        left: 0px;
+        @include mq(retina) {
+          background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.webp');
+        }
+      }
+      @include mq(desktop) {
+        width: 288px;
+        height: 401px;
+        background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.webp');
+        background-repeat: no-repeat;
+        background-position: top 0px right 0px;
+        background-size: auto;
+        top: -315px;
+        left: -80px;
+        @include mq(retina) {
+          background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.webp');
+        }
+      }
+    }
   }
   &__section-title h2 {
     font-weight: 600;
@@ -22,7 +109,7 @@
     margin-left: auto;
     margin-bottom: 41px;
     @include mq(tablet) {
-      width: 303px;
+      width: 305px;
       margin-bottom: 42px;
     }
     @include mq(desktop) {
@@ -55,11 +142,9 @@
     text-overflow: ellipsis;
     overflow: hidden;
     width: 159px;
-    padding-right: 16px;
     margin-top: 16px;
     color: var(--black-txt);
     @include mq(tablet) {
-      padding-right: 0;
       margin-top: 20px;
       width: 305px;
       font-size: 28px;
@@ -70,21 +155,29 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
     width: 159px;
+    height: 42px;
     margin-top: 8px;
     color: var(--grey-txt);
     @include mq(tablet) {
       font-size: 16px;
       margin-top: 12px;
       width: 235px;
+      height: auto;
     }
   }
   &__slick-slider-nav {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
+    margin-top: 20px;
     @include mq(desktop) {
-      margin-top: 40px;
+      margin-top: 36px;
     }
   }
 }

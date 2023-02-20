@@ -1,0 +1,327 @@
+.reviews {
+  background-color: var(--primary-bg);
+  padding-top: 40px;
+  padding-bottom: 114px;
+
+  @include mq(tablet) {
+    padding-top: 40px;
+    padding-bottom: 52px;
+  }
+  @include mq(desktop) {
+    padding-top: 60px;
+    padding-bottom: 208px;
+  }
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    &::before {
+      @include mq(tablet) {
+        content: '';
+        position: absolute;
+        width: 192px;
+        height: 205px;
+        z-index: 10;
+        background: url('../images/reviews/reviews-girl@1x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        bottom: 24px;
+        left: 32px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-girl@2x.png');
+        }
+      }
+      @include mq(desktop) {
+        width: 381px;
+        height: 407px;
+        z-index: 10;
+        background: url('../images/reviews/reviews-girl@1x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        bottom: -95px;
+        left: 32px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-girl@2x.png');
+        }
+      }
+    }
+    .webp &::before {
+      @include mq(tablet) {
+        content: '';
+        position: absolute;
+        width: 192px;
+        height: 205px;
+        z-index: 10;
+        background: url('../images/reviews/reviews-girl@1x.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        bottom: 24px;
+        left: 32px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-girl@2x.webp');
+        }
+      }
+      @include mq(desktop) {
+        width: 381px;
+        height: 407px;
+        z-index: 10;
+        background: url('../images/reviews/reviews-girl@1x.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        bottom: -95px;
+        left: 32px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-girl@2x.webp');
+        }
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 237px;
+      height: 252px;
+      z-index: 10;
+      background: url('../images/reviews/reviews-cup@1x.png');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 237px 252px;
+      bottom: -154px;
+      left: 282px;
+      @include mq(retina) {
+        background: url('../images/reviews/reviews-cup@2x.png');
+      }
+      @include mq(tablet) {
+        width: 239px;
+        height: 255px;
+        background: url('../images/reviews/reviews-cup@1x.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 239px 255px;
+        bottom: -163px;
+        left: 657px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-cup@2x.png');
+        }
+      }
+      @include mq(desktop) {
+        width: 501px;
+        height: 534px;
+        background: url('../images/reviews/reviews-cup@1x.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 501px 534px;
+        bottom: -101px;
+        left: 1072px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-cup@2x.png');
+        }
+      }
+    }
+    .webp &::after {
+      content: '';
+      position: absolute;
+      width: 237px;
+      height: 252px;
+      z-index: 10;
+      background: url('../images/reviews/reviews-cup@1x.webp');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 237px 252px;
+      bottom: -154px;
+      left: 282px;
+      @include mq(retina) {
+        background: url('../images/reviews/reviews-cup@2x.webp');
+      }
+      @include mq(tablet) {
+        width: 239px;
+        height: 255px;
+        background: url('../images/reviews/reviews-cup@1x.webp');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 239px 255px;
+        bottom: -163px;
+        left: 657px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-cup@2x.webp');
+        }
+      }
+      @include mq(desktop) {
+        width: 501px;
+        height: 534px;
+        background: url('../images/reviews/reviews-cup@1x.webp');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 501px 534px;
+        bottom: -101px;
+        left: 1072px;
+        @include mq(retina) {
+          background: url('../images/reviews/reviews-cup@2x.webp');
+        }
+      }
+    }
+  }
+  &__section-title h2 {
+    font-weight: 600;
+  }
+  &__section-title {
+    display: block;
+    width: 288px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 85px;
+    @include mq(tablet) {
+      width: 480px;
+      margin-bottom: 68px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 85px;
+    }
+  }
+  &__slick-slider {
+    width: 267px;
+    margin-right: auto;
+    margin-left: auto;
+    &::before {
+      @include mq(tablet) {
+        content: '';
+        position: absolute;
+        width: 794px;
+        height: 737px;
+        z-index: 0;
+        background: url('../images/reviews/tab-reviews-box.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        top: -255px;
+        right: 425px;
+      }
+      @include mq(desktop) {
+        width: 1110px;
+        height: 1044px;
+        z-index: 0;
+        background: url('../images/reviews/desc-reviews-box.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        top: -407px;
+        right: 492px;
+      }
+    }
+    @include mq(tablet) {
+      width: 384px;
+      margin-right: 64px;
+    }
+    @include mq(desktop) {
+      margin-right: 298px;
+    }
+    & .slick-slide {
+      width: 267px;
+      @include mq(tablet) {
+        width: 384px;
+      }
+    }
+  }
+  &__slick-slide-title {
+    display: block;
+    position: relative;
+    font-family: var(--Playfair-Display);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--black-txt);
+    @include mq(tablet) {
+      font-size: 28px;
+      text-align: start;
+      margin-bottom: 20px;
+    }
+  }
+  &__slick-slide-text {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 16px;
+    @include mq(tablet) {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: start;
+      margin-bottom: 20px;
+    }
+  }
+  &__reviewer-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 39px;
+    margin-bottom: 32px;
+    @include mq(tablet) {
+      margin-left: 0px;
+    }
+    & .reviews__image {
+      width: 48px;
+      height: 48px;
+      @include mq(tablet) {
+        width: 62px;
+        height: 62px;
+      }
+    }
+  }
+  &__score-container {
+    margin-left: 12px;
+  }
+  &__reviewer-name {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    @include mq(tablet) {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+  }
+  &__reviewer-score-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  &__reviewer-score-item + &__reviewer-score-item {
+    margin-left: 4px;
+  }
+  &__slick-slider-nav {
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(desktop) {
+      margin-left: 675px;
+    }
+  }
+}
+.icon-left-quote {
+  position: absolute;
+  top: 83px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  color: var(--brown-bg);
+  &::before {
+    @include mq(tablet) {
+      position: absolute;
+      top: 27px;
+      left: -162px;
+    }
+    @include mq(desktop) {
+      position: absolute;
+      top: 44px;
+      left: -140px;
+    }
+  }
+  @include mq(tablet) {
+    font-size: 50px;
+  }
+}

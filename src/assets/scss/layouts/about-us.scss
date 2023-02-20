@@ -1,8 +1,16 @@
 .about-us {
   // common
-  position: relative;
 
   background-color: var(--primary-bg);
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
 
   &__item {
     display: flex;
@@ -185,7 +193,7 @@
     }
 
     &__picture-coffee-dec {
-      top: -55px;
+      top: -300px;
     }
   }
 }

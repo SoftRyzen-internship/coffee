@@ -1,6 +1,8 @@
 <section class="about-us" id="about-us">
   <div class="about-us__container container">
-    <h2 class="section-title">Why You Choice Us</h2>
+    <div class="about-us__title">
+      {% set sectionTitle = "Why You Choice Us" %} {% include 'components/section-title.html' %}
+    </div>
 
     <div class="about-us__content-wrapper">
       <ul class="about-us__list">
@@ -186,8 +188,8 @@
         <img
           src="./assets/images/about-us/desktop/coffee.png"
           alt="coffee"
-          width="238"
-          height="310"
+          width="600"
+          height="545"
           loading="lazy"
         />
       </picture>

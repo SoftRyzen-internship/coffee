@@ -187,6 +187,7 @@
     }
 
     &__name {
+      font-family: var(--Playfair-Display);
       font-size: 28px;
       line-height: 1.32;
     }
@@ -200,19 +201,19 @@
     }
 
     &__name-l {
-      min-width: 166px;
+      min-width: 169px;
     }
 
     &__name-c-l {
-      min-width: 208px;
+      min-width: 213px;
     }
 
     &__name-s-l {
-      min-width: 284px;
+      min-width: 291px;
     }
 
     &__name-c-ll {
-      min-width: 246px;
+      min-width: 253px;
     }
 
     &__price-wrapper {

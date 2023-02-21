@@ -38,6 +38,10 @@
     align-items: flex-end;
   }
 
+  &__name {
+    font-family: var(--Playfair-Display);
+  }
+
   &__name-line {
     margin: 0 8px 5px;
     width: 100%;
@@ -187,7 +191,6 @@
     }
 
     &__name {
-      font-family: var(--Playfair-Display);
       font-size: 28px;
       line-height: 1.32;
     }

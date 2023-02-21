@@ -26,8 +26,18 @@
     }
   }
   &__slick-slider {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(mobile) {
+      width: auto;
+    }
     & .slick-slide {
+      width: 132px;
       margin-left: 16px;
+      @include mq(mobile) {
+        width: auto;
+      }
       @include mq(tablet) {
         margin-left: 37px;
       }
@@ -49,8 +59,11 @@
       position: absolute;
       width: 16px;
       height: 16px;
-      top: 32%;
+      top: 36%;
       z-index: 1;
+      @include mq(mobile) {
+        top: 32%;
+      }
       @include mq(tablet) {
         width: 32px;
         height: 32px;

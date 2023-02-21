@@ -20,12 +20,15 @@
       z-index: 10;
       background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.png');
       background-repeat: no-repeat;
-      background-position: top 0px right 0px;
-      background-size: auto;
+      background-position: center;
+      background-size: cover;
       top: -124px;
       left: -164px;
       @include mq(retina) {
         background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
 
       @include mq(tablet) {
@@ -33,12 +36,15 @@
         height: 332px;
         background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.png');
         background-repeat: no-repeat;
-        background-position: top 0px right 0px;
-        background-size: auto;
+        background-position: center;
+        background-size: cover;
         top: -213px;
         left: -210px;
         @include mq(retina) {
           background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
         }
       }
       @include mq(desktop) {
@@ -46,12 +52,15 @@
         height: 534px;
         background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.png');
         background-repeat: no-repeat;
-        background-position: top 0px right 0px;
-        background-size: auto;
+        background-position: center;
+        background-size: cover;
         top: -315px;
         left: -422px;
         @include mq(retina) {
           background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
         }
       }
     }
@@ -63,12 +72,15 @@
       z-index: 10;
       background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.webp');
       background-repeat: no-repeat;
-      background-position: top 0px right 0px;
-      background-size: auto;
+      background-position: center;
+      background-size: cover;
       top: -124px;
       left: -164px;
       @include mq(retina) {
         background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
 
       @include mq(tablet) {
@@ -76,12 +88,15 @@
         height: 332px;
         background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.webp');
         background-repeat: no-repeat;
-        background-position: top 0px right 0px;
-        background-size: auto;
+        background-position: center;
+        background-size: cover;
         top: -213px;
         left: -210px;
         @include mq(retina) {
           background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.webp');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
         }
       }
       @include mq(desktop) {
@@ -89,12 +104,15 @@
         height: 534px;
         background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.webp');
         background-repeat: no-repeat;
-        background-position: top 0px right 0px;
-        background-size: auto;
+        background-position: center;
+        background-size: cover;
         top: -315px;
         left: -422px;
         @include mq(retina) {
           background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.webp');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
         }
       }
     }
@@ -117,9 +135,19 @@
     }
   }
   &__slick-slider {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(mobile) {
+      width: auto;
+    }
     & .slick-slide {
-      width: 159px;
+      width: 280px;
       margin-left: 17px;
+      @include mq(mobile) {
+        width: 159px;
+        margin-left: 17px;
+      }
       @include mq(tablet) {
         width: 336px;
         margin-left: 32px;
@@ -138,12 +166,15 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.31;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 159px;
+    width: 244px;
     margin-top: 16px;
     color: var(--black-txt);
+    @include mq(mobile) {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 159px;
+    }
     @include mq(tablet) {
       margin-top: 20px;
       width: 305px;
@@ -155,16 +186,19 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    width: 159px;
-    height: 42px;
+    width: 244px;
     margin-top: 8px;
     color: var(--grey-txt);
+    @include mq(mobile) {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      width: 159px;
+      height: 42px;
+    }
     @include mq(tablet) {
       font-size: 16px;
       margin-top: 12px;

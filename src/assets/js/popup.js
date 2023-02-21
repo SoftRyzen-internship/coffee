@@ -21,6 +21,14 @@ $(document).ready(function () {
     });
   });
 
+  function setScrolHidden() {
+    if (mobileMenu.classList.contains('is-open')) {
+      body.classList.add('scroll-hidden');
+    } else {
+      body.classList.remove('scroll-hidden');
+    }
+  }
+
   function togglePopup() {
     popup.classList.toggle('is-hidden');
   }
@@ -30,15 +38,11 @@ $(document).ready(function () {
     modal.classList.add('is-hidden');
   }
 
-  closePopupBtn.addEventListener('click', () => {
+  function onClickButtonClosePopup() {
     closePopup();
 
-    if (mobileMenu.classList.contains('is-open')) {
-      body.classList.add('scroll-hidden');
-    } else {
-      body.classList.remove('scroll-hidden');
-    }
+    setScrolHidden();
+  }
 
-    // body.classList.remove('scroll-hidden');
-  });
+  closePopupBtn.addEventListener('click', onClickButtonClosePopup);
 });

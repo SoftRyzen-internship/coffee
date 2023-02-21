@@ -7,11 +7,9 @@ $(document).ready(function () {
   const closeModalBtn = document.querySelector('[data-modal-close]');
   const body = document.querySelector('body');
   const backdrop = document.querySelector('.backdrop');
-  const sendBtn = document.querySelector('.send__btn');
   const popup = document.querySelector('.popup');
 
   const mobileMenu = document.querySelector('[data-menu]');
-  console.log('mobileMenu', mobileMenu);
 
   const form = document.getElementById('form');
   const username = document.getElementById('name');
@@ -35,10 +33,17 @@ $(document).ready(function () {
     });
   });
 
+  function setScrolHidden() {
+    if (mobileMenu.classList.contains('is-open')) {
+      body.classList.add('scroll-hidden');
+    } else {
+      body.classList.remove('scroll-hidden');
+    }
+  }
+
   function toggleModal() {
     modal.classList.toggle('is-hidden');
     modalWindow.classList.toggle('is-hidden');
-    // body.classList.toggle('scroll-hidden');
   }
 
   function togglePopup() {
@@ -75,27 +80,26 @@ $(document).ready(function () {
   function handleClose(e) {
     if (e.target === e.currentTarget && popup.classList.contains('is-hidden')) {
       toggleModal();
-      body.classList.remove('scroll-hidden');
+
+      setScrolHidden();
     }
 
     if (e.target === e.currentTarget && !popup.classList.contains('is-hidden')) {
       modal.classList.add('is-hidden');
       togglePopup();
 
-      if (mobileMenu.classList.contains('is-open')) {
-        console.log('mobileMenu is-open YES', mobileMenu);
-        body.classList.add('scroll-hidden');
-      } else {
-        console.log('mobileMenu is-open NO', mobileMenu);
-        body.classList.remove('scroll-hidden');
-      }
-
-      // body.classList.remove('scroll-hidden');
+      setScrolHidden();
     }
     return;
   }
 
+  function onClickButtonCloseModal() {
+    toggleModal();
+
+    setScrolHidden();
+  }
+
   document.addEventListener('keydown', handleKey);
   backdrop.addEventListener('mousedown', handleClose);
-  closeModalBtn.addEventListener('click', toggleModal);
+  closeModalBtn.addEventListener('click', onClickButtonCloseModal);
 });

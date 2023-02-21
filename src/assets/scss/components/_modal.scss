@@ -55,12 +55,26 @@
   }
 }
 
-.modal-close {
+.modal__close-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   right: 16px;
   top: 16px;
-  font-size: 20px;
-  color: var(--black-txt);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke: var(--black-txt);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    stroke: var(--brown-bg);
+  }
 }
 
 .send-btn-wrapper {

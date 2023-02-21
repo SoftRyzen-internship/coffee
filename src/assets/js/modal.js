@@ -10,7 +10,8 @@ $(document).ready(function () {
   const sendBtn = document.querySelector('.send__btn');
   const popup = document.querySelector('.popup');
 
-  const mobileMenu = document.querySelectorAll('.mobile-menu');
+  const mobileMenu = document.querySelector('[data-menu]');
+  console.log('mobileMenu', mobileMenu);
 
   const form = document.getElementById('form');
   const username = document.getElementById('name');
@@ -64,6 +65,7 @@ $(document).ready(function () {
       if (e.key === 'Escape') {
         modal.classList.add('is-hidden');
         togglePopup();
+
         body.classList.remove('scroll-hidden');
       }
     }
@@ -79,7 +81,16 @@ $(document).ready(function () {
     if (e.target === e.currentTarget && !popup.classList.contains('is-hidden')) {
       modal.classList.add('is-hidden');
       togglePopup();
-      body.classList.remove('scroll-hidden');
+
+      if (mobileMenu.classList.contains('is-open')) {
+        console.log('mobileMenu is-open YES', mobileMenu);
+        body.classList.add('scroll-hidden');
+      } else {
+        console.log('mobileMenu is-open NO', mobileMenu);
+        body.classList.remove('scroll-hidden');
+      }
+
+      // body.classList.remove('scroll-hidden');
     }
     return;
   }

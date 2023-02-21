@@ -23,7 +23,7 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   &__navline-wrapper {
     position: relative;
@@ -86,17 +86,6 @@
   visibility: visible;
   opacity: 1;
   pointer-events: all;
-}
-
-.icon-xmark-solid {
-  font-size: 32px;
-  @include mq(tablet) {
-    font-size: 40px;
-  }
-  &:hover,
-  &:focus {
-    color: var(--header-logo);
-  }
 }
 
 .nav-mobile {
@@ -186,5 +175,15 @@
 
     top: 36px;
     right: -478px;
+  }
+}
+.menu-close-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke: var(--black-txt);
+  &:hover,
+  &:focus {
+    stroke: var(--brown-bg);
   }
 }

@@ -1,11 +1,8 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal is-hidden">
-    <button
-      class="modal-close icon-xmark-solid"
-      type="button"
-      aria-label="Close modal"
-      data-modal-close
-    ></button>
+    <svg class="modal__close-icon" aria-label="Close modal" data-modal-close>
+      <use xlink:href="assets/images/sprite.svg#icon-xmark-solid"></use>
+    </svg>
     <div class="modal-content">
       <form class="contact-form" action="#" id="form">
         <div class="modal__title-wrapper">
@@ -33,12 +30,9 @@
   </div>
 
   <div class="modal popup is-hidden">
-    <button
-      class="modal-close icon-xmark-solid"
-      type="button"
-      aria-label="Close popup"
-      data-popup-close
-    ></button>
+    <svg class="modal__close-icon" aria-label="Close popup" data-popup-close>
+      <use xlink:href="assets/images/sprite.svg#icon-xmark-solid"></use>
+    </svg>
     <p class="section-title popup-title">We will contact with you soon</p>
   </div>
 </div>

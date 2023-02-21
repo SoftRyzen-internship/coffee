@@ -263,11 +263,11 @@
 }
 
 .hero__btn {
-  @media (max-width: 370px) {
-    padding: 19.5px 90px;
-  }
+  padding: 19.5px 80px;
 
-  padding: 19.5px 115.5px;
+  @include mq(mobile) {
+    padding: 19.5px 115.5px;
+  }
 
   @include mq(tablet) {
     position: absolute;

@@ -14,5 +14,7 @@ $(document).ready(function () {
       fade: true,
       cssEase: 'linear',
       speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000,
     });
 });

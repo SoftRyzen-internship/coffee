@@ -59,8 +59,11 @@
       position: absolute;
       width: 16px;
       height: 16px;
-      top: 32%;
+      top: 36%;
       z-index: 1;
+      @include mq(mobile) {
+        top: 32%;
+      }
       @include mq(tablet) {
         width: 32px;
         height: 32px;

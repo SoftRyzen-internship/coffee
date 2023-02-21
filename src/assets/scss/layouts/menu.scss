@@ -38,6 +38,10 @@
     align-items: flex-end;
   }
 
+  &__name {
+    font-family: var(--Playfair-Display);
+  }
+
   &__name-line {
     margin: 0 8px 5px;
     width: 100%;
@@ -109,11 +113,11 @@
     }
 
     &__name-c-l {
-      min-width: 135px;
+      min-width: 137px;
     }
 
     &__name-c-ll {
-      min-width: 159px;
+      min-width: 163px;
     }
 
     &__name-s {
@@ -121,7 +125,7 @@
     }
 
     &__name-s-l {
-      min-width: 183px;
+      min-width: 187px;
     }
 
     &__icon::before {
@@ -200,19 +204,19 @@
     }
 
     &__name-l {
-      min-width: 166px;
+      min-width: 169px;
     }
 
     &__name-c-l {
-      min-width: 208px;
+      min-width: 213px;
     }
 
     &__name-s-l {
-      min-width: 284px;
+      min-width: 291px;
     }
 
     &__name-c-ll {
-      min-width: 246px;
+      min-width: 253px;
     }
 
     &__price-wrapper {

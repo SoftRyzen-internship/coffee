@@ -12,110 +12,6 @@
   &__container {
     position: relative;
     margin: 0 auto;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 285px;
-      height: 241px;
-      z-index: 10;
-      background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      top: -124px;
-      left: -164px;
-      @include mq(retina) {
-        background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-
-      @include mq(tablet) {
-        width: 390px;
-        height: 332px;
-        background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        top: -213px;
-        left: -210px;
-        @include mq(retina) {
-          background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.png');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        }
-      }
-      @include mq(desktop) {
-        width: 632px;
-        height: 534px;
-        background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        top: -315px;
-        left: -422px;
-        @include mq(retina) {
-          background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.png');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        }
-      }
-    }
-    .webp &::before {
-      content: '';
-      position: absolute;
-      width: 285px;
-      height: 241px;
-      z-index: 10;
-      background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.webp');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      top: -124px;
-      left: -164px;
-      @include mq(retina) {
-        background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.webp');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-
-      @include mq(tablet) {
-        width: 390px;
-        height: 332px;
-        background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.webp');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        top: -213px;
-        left: -210px;
-        @include mq(retina) {
-          background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.webp');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        }
-      }
-      @include mq(desktop) {
-        width: 632px;
-        height: 534px;
-        background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.webp');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        top: -315px;
-        left: -422px;
-        @include mq(retina) {
-          background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.webp');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        }
-      }
-    }
   }
   &__section-title h2 {
     font-weight: 600;
@@ -212,6 +108,112 @@
     margin-top: 20px;
     @include mq(desktop) {
       margin-top: 36px;
+    }
+  }
+}
+
+.webp .blog__container::before {
+  content: '';
+  position: absolute;
+  width: 285px;
+  height: 241px;
+  z-index: 10;
+  background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: -124px;
+  left: -164px;
+  @include mq(retina) {
+    background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @include mq(tablet) {
+    width: 390px;
+    height: 332px;
+    background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -213px;
+    left: -210px;
+    @include mq(retina) {
+      background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.webp');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  @include mq(desktop) {
+    width: 632px;
+    height: 534px;
+    background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -315px;
+    left: -422px;
+    @include mq(retina) {
+      background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.webp');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+.no-webp .blog__container::before {
+  content: '';
+  position: absolute;
+  width: 285px;
+  height: 241px;
+  z-index: 10;
+  background: url('../images/blog/mobile/mob-blog-bg-coffee@1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: -124px;
+  left: -164px;
+  @include mq(retina) {
+    background: url('../images/blog/mobile/mob-blog-bg-coffee@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @include mq(tablet) {
+    width: 390px;
+    height: 332px;
+    background: url('../images/blog/tablet/tab-blog-bg-coffee@1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -213px;
+    left: -210px;
+    @include mq(retina) {
+      background: url('../images/blog/tablet/tab-blog-bg-coffee@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  @include mq(desktop) {
+    width: 632px;
+    height: 534px;
+    background: url('../images/blog/desktop/desc-blog-bg-coffee@1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -315px;
+    left: -422px;
+    @include mq(retina) {
+      background: url('../images/blog/desktop/desc-blog-bg-coffee@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 }

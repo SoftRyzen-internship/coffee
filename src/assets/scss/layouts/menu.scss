@@ -1,6 +1,6 @@
 .menu {
   background-color: var(--coffee-kinds-bg);
-
+  text-align: center;
   &__title {
     display: flex;
     justify-content: center;
@@ -17,7 +17,9 @@
   &__list {
     display: grid;
   }
-
+  &__part {
+    text-align: left;
+  }
   &__item {
     display: grid;
     align-items: center;
@@ -30,6 +32,7 @@
 
     background-color: var(--menu-bg);
     box-shadow: var(--menu-sd);
+    width: 57px;
   }
 
   &__name-wrapper {
@@ -85,10 +88,6 @@
   // mobile
 
   @include mq(mobile-only) {
-    &__picture {
-      margin-right: 8px;
-    }
-
     &__list {
       row-gap: 15px;
 
@@ -97,6 +96,7 @@
 
     &__item {
       grid-template-columns: 1fr 4fr;
+      gap: 8px;
     }
 
     &__name-wrapper {
@@ -144,7 +144,8 @@
     }
 
     &__btn {
-      width: 100%;
+      padding: 20px 65px;
+      white-space: nowrap;
     }
   }
 
@@ -174,7 +175,7 @@
 
   @include mq(tablet) {
     &__picture {
-      margin-right: 16px;
+      width: 120px;
     }
 
     &__list {
@@ -183,6 +184,7 @@
 
     &__item {
       grid-template-columns: 1fr 5fr;
+      gap: 16px;
     }
 
     &__subtitle {
@@ -256,10 +258,6 @@
       grid-template-columns: 1fr 1fr;
       column-gap: 32px;
       row-gap: 24px;
-    }
-
-    &__picture {
-      min-width: 120px;
     }
 
     &__subtitle {

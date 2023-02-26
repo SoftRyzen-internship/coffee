@@ -13,7 +13,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       fade: true,
       cssEase: 'linear',
-      speed: 500,
+      speed: 1000,
       autoplay: true,
       autoplaySpeed: 3000,
       pauseOnHover: false,

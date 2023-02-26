@@ -22,13 +22,16 @@
   }
 
   &__icon {
-    display: inline-block;
-    fill: var(--brown-bg);
+    display: block;
     width: 32px;
     height: 32px;
+    fill: var(--brown-bg);
+    cursor: pointer;
     margin: 0 auto;
     visibility: visible;
-    cursor: pointer;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
   }
 }
 .back-to-top__link.active {

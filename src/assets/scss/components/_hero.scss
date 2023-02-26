@@ -263,18 +263,14 @@
 }
 
 .hero__btn {
-  padding: 19.5px 80px;
-
-  @include mq(mobile) {
-    padding: 19.5px 115.5px;
-  }
+  padding: 20px 90px;
 
   @include mq(tablet) {
     position: absolute;
     top: 415px;
     left: 0;
 
-    padding: 19.5px 54px;
+    padding: 20px 54px;
   }
   @include mq(desktop) {
     top: 484px;

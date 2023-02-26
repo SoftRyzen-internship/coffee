@@ -2,7 +2,9 @@
   background-color: var(--primary-bg);
   padding-top: 40px;
   padding-bottom: 114px;
-
+  &__reviewer-score-image {
+    width: 66px;
+  }
   @include mq(tablet) {
     padding-top: 40px;
     padding-bottom: 52px;

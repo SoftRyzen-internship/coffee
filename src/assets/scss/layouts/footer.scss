@@ -240,6 +240,7 @@
 
   &__softryzen {
     opacity: 0.7;
+    color: var(--white-txt);
     line-height: 1.28;
     font-size: 14px;
     @include mq(desktop) {

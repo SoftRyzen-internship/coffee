@@ -6,20 +6,19 @@ const refs = {
 const handleClick = () => {
   const { hiddenMenu, btn } = refs;
 
-  if (btn.textContent === 'View all menu') {
-    for(let el of hiddenMenu) {
+  if (btn.innerHTML === 'View&nbsp;all&nbsp;menu') {
+    for (let el of hiddenMenu) {
       el.style.display = 'block';
     }
-    btn.textContent = 'Close menu';
+    btn.innerHTML = `Close&nbsp;menu`;
   } else {
+    window.location.href = '#menu';
 
-      window.location.href='#menu';
-
-    for(let el of hiddenMenu) {
+    for (let el of hiddenMenu) {
       el.style.display = 'none';
     }
 
-    btn.textContent = 'View all menu';
+    btn.innerHTML = 'View&nbsp;all&nbsp;menu';
   }
 };
 

@@ -62,7 +62,7 @@
 
   &__price-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 
   &__price {
@@ -131,6 +131,7 @@
     &__icon::before {
       width: 9px;
       height: 16px;
+      margin-bottom: 2px;
     }
 
     &__price {
@@ -233,7 +234,7 @@
     &__icon::before {
       width: 14px;
       height: 24px;
-
+      margin-bottom: 2px;
       font-size: 24px;
     }
 
